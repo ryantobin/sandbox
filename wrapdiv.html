@@ -1,0 +1,40 @@
+<html>
+<head>
+
+<style>
+	.addedA {
+		text-decoration: none;
+		color: inherit;
+		display: block;
+	}
+</style>
+
+
+</head>
+
+</body>
+	<div class="testbox">
+		<div id="test"><h3> Title </h3></div>
+	</div>
+	<div class="testbox">
+		<div id="test2"><h3> Title2 </h3></div>
+	</div>
+	<button onclick="addTitleLinks()">Click</button>
+	
+
+<script>	
+	function addTitleLinks () {
+		org_html = (document.getElementById("test")).parentNode.innerHTML;
+		new_html = "<a href='#' class='addedA'>" + org_html + "</a>";
+		(document.getElementById("test")).parentNode.innerHTML = new_html;
+		
+		org_html = (document.getElementById("test2")).parentNode.innerHTML;
+		new_html = "<a href='#'>" + org_html + "</a>";
+		(document.getElementById("test2")).parentNode.innerHTML = new_html;
+		
+	};	
+	
+	//window.onload = addTitleLinks();
+</script>
+</body>
+</html>

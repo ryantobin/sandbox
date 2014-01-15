@@ -1,0 +1,75 @@
+<html>
+
+<head>
+<style>
+	body {
+		background: white;
+		text-align: center;
+		border: 3px solid black;
+		background:url('images/Chrysanthemum.jpg');
+		background-size:80px 60px;
+		background-repeat:no-repeat;
+		padding-top:40px;
+	}
+	#container {
+		background: grey;
+		text-align: left;
+		width: 80%;
+		height: 100%;
+		margin: 0 auto;
+		border: 3px solid pink;
+		position: relative;
+	}
+
+	#menu {
+		width: 140px;
+		height: 200px;
+		float: left;
+		background: green;
+
+	}
+	#menu:after {
+		clear: both;
+	}
+	#content {
+		float: right;
+		width: 540px;
+		height: 300px;
+		background: blue;
+		border: 2px solid;
+		left: 160px;
+
+	}
+	@media screen and (max-width: 920px) {
+		#container {
+			
+		}
+		#content {
+			
+		}
+	}
+</style>
+</head>
+
+<body>
+<div id='container'>
+
+	
+	<div id='content'>
+		<div id='b2'>Writing is good for letting things out</div>
+		<button onclick="javascript:alert(window.outerWidth);">Page Width</button>
+	</div>
+	
+	<div id='menu'>
+	hmm
+		<ul>
+			<li>Something</li>
+			<li>Something else</li>
+			<li>a third thing</li>
+			<li>Whatever</li>
+			<li>enough</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

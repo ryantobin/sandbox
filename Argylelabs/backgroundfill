@@ -1,0 +1,16 @@
+<!-- depending on the screen size - display a different sized image -->
+
+<!-- detect screen size -->
+
+<!-- styles to detect size -->
+
+<!-- formats - mobile, devices, browsers -->
+<?php
+
+// store - detect browser
+
+// store - screen size - resolution
+
+//
+
+?>

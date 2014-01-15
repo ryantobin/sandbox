@@ -1,0 +1,13 @@
+<style type="text/css">
+.contact {margin:0 10px;}
+.contact div{padding:7px 0 7px 25px; margin-right:5px; height:22px; font-size:0.75em; float:left; line-height:23px;}
+.inquiries {background:transparent url(/wp-content/themes/responsive/images/contact_inquiries.png) no-repeat 0 50%;}
+.sales {background:transparent url(/wp-content/themes/responsive/images/contact_sales.png) no-repeat 0 50%;}
+.support {background:transparent url(/wp-content/themes/responsive/images/contact_support.png) no-repeat 0 50%;}
+</style>
+<div class="contact">
+    <a href="[short_url]/contact"><div class="inquiries">Inquiries</div></a>
+    <div class="sales">Sales: <a href="tel:+44-1624-678-888">+44-1624-678-888</a></div>
+    <div class="support">Support: <a href="tel:+44-1624-678-888">+44-1624-678-888</a></div>
+</div>
+<div class="clearfix"></div>

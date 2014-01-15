@@ -1,0 +1,70 @@
+
+<html>
+<head>
+<title>
+Argyle Labs
+</title>
+<link href='http://fonts.googleapis.com/css?family=Doppio+One' rel='stylesheet' type='text/css'>
+<link href="normalize.css" rel="stylesheet">
+<script src="../../assets/js/jquery-1.10.2.min.js"></script>
+
+<style type="text/css">
+html, body {
+
+}
+body {
+	position: relative;
+	
+}
+
+.space {
+  height: 25%;
+}
+
+.first {
+  margin: 50px 0px; padding:0px;
+  text-align:center;
+}
+
+.logo {
+font-family: 'Doppio One', sans-serif;
+color: black;
+font-size: 42px;
+}
+
+
+</style>
+
+
+</head>
+
+
+<body style="border: 5px solid black">
+<div class='space'></div>
+<div class='first'>
+<table align='center'>
+<tr>
+<td><img src="argylepattern.jpeg" height='47' width='43'></td>
+<td class='logo'> Argyle Labs </td>
+</tr>
+</table>
+<i>Creation - Innovation - Acceleration</i>
+<br>
+<i> Build - Grow - Prosper </i>
+</div>
+
+
+</body>
+
+<script>
+	window.onresize = function () {
+		var borderOffset = -2*parseInt(document.body.style.border);
+		var doc = document.documentElement;
+		document.body.style.width = doc.clientWidth + borderOffset;
+//		document.body.style.width = window.clientWidth - 2*parseInt(document.body.style.border); 
+		document.body.style.height = document.documentElement.clientHeight - 2*parseInt(document.body.style.border);
+//		document.body.style.height = Math.max(doc.clientHeight, window.clientHeight) + borderOffset;
+		
+	};
+</script>
+</html>

@@ -1,0 +1,56 @@
+<html>
+<head>
+
+<style>
+	/* For homepage title links added by JS */
+	.addedA {
+		text-decoration: none;
+		color: inherit;
+		display: block;
+	}
+</style>
+
+
+</head>
+
+</body>
+	<div class="widget-wrapper">
+		<div id="widget-title-one"><h3> Loc and Networks </h3></div>
+		<div id="another">this shouldn't ... </div>
+	</div>
+	<div class="widget-wrapper">
+		<div id="widget-title-three"><h3> Solutions </h3></div>
+	</div>
+	<button onclick="addTitleLinks()">Click</button>
+	
+
+<script>	
+	
+	function splitDiv (str){
+		// store first div in the string
+		firstDiv = str.split("</div>", 1)+"</div>";
+		// find index for rest of string
+		n = str.search("</div>") + 6;
+		// store the rest
+		theRest = str.slice(n);
+		// return an array of the separated components
+		return new Array(firstDiv, theRest);
+		
+	};
+	
+	function addTitleLinks () {
+		org_html = (document.getElementById("widget-title-one")).parentNode.innerHTML;
+		new_html = "<a href='http://78.24.208.245/locations-networks/' class='addedA'>" + splitDiv(org_html)[0] + "</a>" + splitDiv(org_html)[1];
+		(document.getElementById("widget-title-one")).parentNode.innerHTML = new_html;
+		
+		org_html = (document.getElementById("widget-title-three")).parentNode.innerHTML;
+		new_html = "<a href='http://78.24.208.245/solutions/' class='addedA'>" + splitDiv(org_html)[0] + "</a>" + splitDiv(org_html)[1];
+		(document.getElementById("widget-title-three")).parentNode.innerHTML = new_html;
+		
+	};	
+	
+	
+	window.onload = addTitleLinks();
+</script>
+</body>
+</html>

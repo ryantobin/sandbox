@@ -1,0 +1,7 @@
+<BOX>
+	<INNERBOX>
+		<NAMEA>Blarg</NAMEA>
+		<NUMBER>12</NUMBER>
+		<STRING>This is a string</STRING>
+	</INNERBOX>
+</BOX>

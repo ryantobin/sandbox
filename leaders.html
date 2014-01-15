@@ -1,0 +1,237 @@
+<!-- Leadership Page HTML markup for Wordpress Page-->
+
+<!-- Note: Dependence on jQuery -->
+<script type="text/javascript">
+            jQuery.noConflict(  )
+            jQuery144 = jQuery
+            console.log(jQuery144, jQuery)
+</script>
+<!-- jQuery -->
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<!-- Scripts -->
+<script>
+	$(document).ready(function(){
+		// add 'toggle' option if bio is larger than a certain height
+		$(".bio").each(function() {
+			var innerHeight = $(this).removeClass('bio').height();
+			$(this).addClass('bio');
+
+			if(innerHeight > 160) {
+				$(this).parent().append("<div class='toggle' style='font-type: italic; color:#b32017;'>(<b><i>more</i></b>)</div>");
+			}
+			else {
+				$(this).parent().append("<div>&nbsp;</div>");
+			}
+			// add the True Height attribute - works for opening window size, if resized page needs to be reloaded
+			$(this).attr('trueHeight', innerHeight);
+		});
+		// when 'toggle' is clicked
+		$(".toggle").click(function() {
+			// find it's height without clipping that we stored before
+			var innerHeight = parseInt($(this).prev().attr('trueHeight'));
+			
+			// changed contents of 'toggle' to match desired grow/shrink
+			if(($(this).prev().height() == 160)){
+				$(this).html("(<b><i>less</i></b>)");
+			}
+			else {
+				$(this).html("(<b><i>more</i></b>)");
+			}	
+			// slide or shrink 'bio' to fit
+			$(this).prev().animate({
+				height: (($(this).prev().height() == 160)? (innerHeight+30) :  parseInt(bioHeight)+"px")
+			}, 'swing');
+		});
+	});
+
+</script>
+
+<!-- Styles -->
+<style>
+	#team table {
+		display: block;
+	}
+	#team table, tr, td {
+		border: none !important;
+	}
+	#team .bio {
+		height: 147px;
+		overflow: hidden;
+		position: relative;
+	}
+	#team .bio-img {
+		width: 122px;
+		background-position: 50% 50%;
+	}
+	#team .toggle {
+		position: relative;
+		float: right;
+		bottom: 0;
+		left: 0;
+		cursor: pointer;
+		width: 100%;
+	}
+	
+	#team td {
+		padding: 0 5px 16px;
+	}
+
+</style>
+
+<div id="team">
+	<table style="">
+	<!-- Mike Tobin -->
+		<tr>
+			<td class='bio-img' title="michael-tobin" style='background: url([short_url]/wp-content/uploads/mike-tobin-bw.jpg) no-repeat;'>				
+			</td>
+			<td>
+				<div class='bio'>
+					<a name="michael-tobin"></a>
+					<h3><strong>Michael Tobin</strong> <a href="http://www.linkedin.com/pub/michael-tobin/7/3a/306"><img src="[short_url]/wp-content/themes/responsive/icons/linkedin-icon.png" alt="" width="18" height="18" /></a></h3>
+					<em><strong>Shareholder and Chief Executive Officer</strong></em>
+					<p>Michael is co-founder of Continent 8 Technologies PLC and the creator of the “Continent 8” brand. He is a Certified Public Accountant by profession and an entrepreneur by nature. He is a former Director of Empire State Development, the lead economic development agency for New York State.</p>
+					<p>Michael is a graduate of Montreal’s McGill University</p>
+					<a class="top" href="#top">&uarr; top</a>
+				</div>
+			</td>
+		</tr>	
+	<!-- Jay Stubina -->
+		<tr>
+			<td class='bio-img' title="jay-stubina" style='background: url([short_url]/wp-content/uploads/jay-stubina-bw.jpg) no-repeat;'>				
+			</td>
+			<td>
+				<div class='bio'>
+					<a name="jay-stubina"></a>
+					<h3><strong>Jay Stubina</strong> <a href="http://www.linkedin.com/pub/jay-stubina/6/392/6b"><img src="[short_url]/wp-content/themes/responsive/icons/linkedin-icon.png" alt="" width="18" height="18" /></a></h3>
+					<em><strong>Shareholder and Co-founder</strong></em>
+					<p>Through his emphasis on customer service and strong business acumen, he helped make Continent 8 the Internet data centre provider of choice for the online gaming industry. Jay brings to Continent 8 his many years of experience in finance and real-estate.</p>
+					<p>Jay is a graduate of Montreal’s McGill University and obtained his chartered accountant certification.  He now occupies the real-estate and internet space.</p>
+					<a class="top" href="#top">&uarr; top</a>
+				</div>
+			</td>
+		</tr>	
+	<!-- Mike Nahoum -->
+		<tr>
+			<td class='bio-img'  title="mike-nahoum" style='background: url([short_url]/wp-content/uploads/mike-nahoum-bw.jpg) no-repeat;'>				
+			</td>
+			<td>
+				<div class='bio'>
+					<a name="mike-nahoum"></a>
+					<h3><strong>Mike Nahoum</strong> <a href="http://www.linkedin.com/pub/mike-nahoum/18/473/6b"><img src="[short_url]/wp-content/themes/responsive/icons/linkedin-icon.png" alt="" width="18" height="18" /></a></h3>
+					<em><strong>CFO and VP Operations</strong></em>
+					<p>Prior to Mike becoming the acting Financial Director* of Continent 8 Technologies PLC in April 2006 Mike was the CFO and VP Operations of Mohawk internet Technologies from September 2001. Prior to that Mike served as Chief Financial Officer of Interaction Restaurants Ltd for 5 years. During that time, the company was ranked among the top 50 Canadian-based restaurant companies in terms of sales. Prior to that, he was Chief Financial Officer of The Marine Group, a real estate development company. Mike is a Chartered Accountant and articled at Zittrer Siblin Stein Levine (which later joined Ernst &amp; Young) until he left as a Senior Manager. Mike has a Bachelor of Commerce from Concordia University and is a graduate of McGill University.</p>
+					<p>*Financial directorship and consulting services will be provided to the Company by a Canadian company wholly owned and controlled by Mike Nahoum.</p>
+					<a class="top" href="#top">&uarr; top</a>
+				</div>
+			</td>
+		</tr>	
+	<!-- John Stone -->
+		<tr>
+			<td class='bio-img'  title="john-stone" style='background: url([short_url]/wp-content/uploads/john-stone-bw.jpg) no-repeat;'>				
+			</td>
+			<td>
+				<div class='bio'>
+					<a name="john-stone"></a>
+					<h3><strong>John Stone</strong> <a href="http://www.linkedin.com/pub/john-stone/0/788/737"><img src="[short_url]/wp-content/themes/responsive/icons/linkedin-icon.png" alt="" width="18" height="18" /></a></h3>
+					<em><strong>Chief Technology Officer</strong></em>
+					<p>John joined Continent 8 in 2010 from Cisco Systems where he was their CTO for Ireland, he previously also worked for Cara, a subsidiary of Aer Lingus.</p>
+					<p>As CTO for Continent 8, John is responsible for translating technology innovation into business value for Continent 8 and its eGaming customers. John is responsible for the strategic direction of internal infrastructure and services to support Continent 8’s extensive global network, multi-jurisdictional eGaming platform and support organization. In addition, John is also responsible for the definition, development and delivery of current and new services to address customer requirements in this growing and challenging marketplace.</p>
+					<p>John holds a degree from Dublin City University along with three Diploma’s in Information Technology from DCU, Electrical Engineering from DIT Kevin Street, and Business &amp; Finance from the IMI.</p>
+					<a class="top" href="#top">&uarr; top</a>
+				</div>
+			</td>
+		</tr>	
+	<!-- Hai Ng -->
+		<tr>
+			<td class='bio-img' title="hai-ng" style='background: url([short_url]/wp-content/uploads/hai-ng-bw.jpg) no-repeat;'>				
+			</td>
+			<td>
+				<div class='bio'>
+					<a name="hai-ng"></a>
+					<h3><strong>Hai Ng</strong> <a href="http://www.linkedin.com/pub/hai-ng/5/126/671"><img src="[short_url]/wp-content/themes/responsive/icons/linkedin-icon.png" alt="" width="18" height="18" /></a></h3>
+					<em><strong>Chief Information Officer</strong></em>
+					<p>Hai bring a wide range of expertise to Continent 8.  Through his many technology and social media connections he keeps the company up to speed on the latest and greatest opportunities in the industry</p>
+					<p>A valued member of the team, Hai is the go-to-guy for answers on virtually any subject matter</p>
+					<a class="top" href="#top"> top</a>
+				</div>
+			</td>
+		</tr>		
+	<!-- Nick Nally -->
+		<tr>
+			<td class='bio-img' title="nick-nally" style='background: url([short_url]/wp-content/uploads/nick-nally-bw.jpg) no-repeat;'>				
+			</td>
+			<td>
+				<div class='bio'>
+					<a name="nick-nally"></a>
+					<h3><strong>Nick Nally</strong> <a href="http://www.linkedin.com/in/nicknally"><img src="[short_url]/wp-content/themes/responsive/icons/linkedin-icon.png" alt="" width="18" height="18" /></a></h3>
+					<em><strong>Chief Development Officer</strong></em>
+					<p>Nick has 20 years experience in many sectors of the IT &amp; telecommunications industry encompassing senior management, consultancy, sales, carrier relations, engineering and business development.</p>
+					<p>Most recently, Nick set up and developed Packet Exchange’s business operations in Ireland. Nick is also a consultant to the Department of Communications in Ireland and has worked on a number of initiatives including the Irish Connectivity Project and related data centre activity which was a key part of the Irish government’s economic development program. Prior to this Nick held a number of positions in Ireland and the US including Sales Director for WorldPort, a managed hosting provider; Head of Wholesale &amp; Carrier Services for WorldCom in Ireland where he set up the wholesale operation; General Manager for MCI WorldCom in Ireland and Vice President of Business Development with Eircom in the US. Nick holds Electronic Engineering and Master of Industrial Engineering degrees from University College, Dublin.</p>
+					<a class="top" href="#top">&uarr; top</a>
+				</div>
+			</td>
+		</tr>	
+	<!-- Peter Williams -->
+		<tr>
+			<td class='bio-img' title="peter-williams" style='background: url([short_url]/wp-content/uploads/peter-williams-bw.jpg) no-repeat;'>				
+			</td>
+			<td>
+				<div class='bio'>
+					<a name="peter-williams"></a>
+					<h3><strong>Peter Williams</strong> <a href="http://www.linkedin.com/pub/peter-williams/0/433/928"><img src="[short_url]/wp-content/themes/responsive/icons/linkedin-icon.png" alt="" width="18" height="18" /></a></h3>
+					<em><strong>Director of Global Sales</strong></em>
+					<p>Peter has a wealth of experience with over 18 years in Senior Commercial roles, in the Global communications sector, before joining the company he was with Telefonica O2 Ireland where he led a team in the setting of the ICT strategic. Previously Peter worked with companies such as Cable &amp; Wireless (Global Account director), BT Worldwide (Director of ICT Solutions), Energis Communications (Corporate Sales Director) and Cisco Systems (Regional Sales Manager).</p>
+					<p>Peter has also worked with selected start-up organisations building value and growth across several geographies and has extensive experience in implementing complex communications solutions for multi-nationals. He has an excellent track record to date. Peter joins Continent 8 Technologies from his most recent post where he led a team in the setting of the ICT strategic direction for Telefonica O2 Ireland.</p>
+					<a class="top" href="#top">&uarr; top</a>
+				</div>
+			</td>
+		</tr>					
+	<!-- Dany Chapdelaine -->
+		<tr>
+			<td class='bio-img' title="dany-chapdelaine" style='background: url([short_url]/wp-content/uploads/dany-chapdelaine-bw.jpg) no-repeat;'>				
+			</td>
+			<td>
+				<div class='bio'>
+					<a name="dany-chapdelaine"></a>
+					<h3><strong>Dany Chapdelaine</strong> <a href="http://www.linkedin.com/pub/dany-chapdelaine/7/891/529"><img src="[short_url]/wp-content/themes/responsive/icons/linkedin-icon.png" alt="" width="18" height="18" /></a></h3>
+					<em><strong>Director of Technical Operations</strong></em>
+					<p>Dany has over 12 years of experience in IT acting primarily as a system administrator for the first 4 years and as a Technical Operations Director in the gaming industry since 2001.</p>
+					<p>Dany joined Mohawk Internet Technologies in 2006. He consulted in the technical development and implementation of Continent 8 Technologies’ expansion projects in Europe. Previously, Dany was employed as Technical Operations Director for Optimal Payments, an electronic payment processor company working on a number of initiatives including the development, implementation and testing of a disaster recovery solution and business continuity plan for all critical systems.</p>
+					<p>Dany is based in Montreal, Canada and has overall technical responsibility for Continent 8 Technologies’ data centre infrastructure located in North America and Asia. Dany holds a Bachelor degree in mathematics from the University of Trois-Rivières, Canada.</p>
+					<a class="top" href="#top">&uarr; top</a>
+				</div>
+			</td>
+		</tr>
+	<!-- Richard Ebbutt -->
+		<tr>
+			<td class='bio-img' title="richard-ebbutt" style='background: [short_url]/wp-content/uploads/richard-ebbutt-bw.jpg) no-repeat;'>				
+			</td>
+			<td>
+				<div class='bio'>
+					<a name="richard-ebbutt"></a>
+					<h3><strong>Richard Ebbutt</strong> <a href="http://www.linkedin.com/in/richardebbutt"><img src="[short_url]/wp-content/themes/responsive/icons/linkedin-icon.png" alt="" width="18" height="18" /></a></h3>
+					<em><strong>Director of Marketing</strong></em>
+					<p>Richard has over 15 years marketing, advertising and sales experience gained in a number of industry sectors including White goods and FMCG. He has a wide marketing knowledge having undertaken a number of company re-branding exercises and run successful loyalty marketing programmes.</p>
+					<p>Richard holds a Mechanical Engineering Degree from Huddersfield University and is a member of both the Chartered Institute of Marketing and the Chartered Management Institute.</p>
+					<p>Richard is based in the Isle of Man office and has responsibility for Continent 8 Technologies’ global marketing activities.</p>
+					<a class="top" href="#top">&uarr; top</a>
+				</div>
+			</td>
+		</tr>
+	<!-- Paul Watterson -->
+		<tr>
+			<td class='bio-img' title="paul-watterson" style='background: [short_url]/wp-content/uploads/paul-watterson-bw.jpg) no-repeat;'>				
+			</td>
+			<td>
+				<div class='bio'>
+					<a name="paul-watterson"></a>
+					<h3><strong>Paul Watterson</strong> <a href="http://www.linkedin.com/in/pwatterson"><img src="[short_url]/wp-content/themes/responsive/icons/linkedin-icon.png" alt="" width="18" height="18" /></a></h3>
+					<em><strong>Director of Finance</strong></em>
+					<p>Paul has over 10 years experience in the finance industry and prior to becoming Director of Finance and Company Secretary of Continent 8 Technologies he was Audit Manager at KPMG where he qualified as a Chartered Accountant. While at KPMG his specialist industry sectors were banking, investment funds, life insurance and transaction services where he oversaw a number of acquisitions and flotations.</p>
+					<p>Paul is based in the Group’s Head office in the Isle of Man and is responsible for the accounting, company secretarial and key financial relationships of the group. He holds a primary honours degree in Economics from Manchester University.</p>
+					<a class="top" href="#top">&uarr; top</a>
+				</div>
+			</td>
+		</tr>
+	</table>
+</div><!-- end 'team' -->
