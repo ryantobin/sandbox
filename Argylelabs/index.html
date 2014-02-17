@@ -5,66 +5,108 @@
 Argyle Labs
 </title>
 <link href='http://fonts.googleapis.com/css?family=Doppio+One' rel='stylesheet' type='text/css'>
-<link href="normalize.css" rel="stylesheet">
+<!-- <link href="css/normalize.css" rel="stylesheet"> -->
 <script src="../../assets/js/jquery-1.10.2.min.js"></script>
 
-<style type="text/css">
-html, body {
-
-}
-body {
-	position: relative;
-	
-}
-
-.space {
-  height: 25%;
-}
-
-.first {
-  margin: 50px 0px; padding:0px;
-  text-align:center;
-}
-
-.logo {
-font-family: 'Doppio One', sans-serif;
-color: black;
-font-size: 42px;
-}
-
-
-</style>
-
+<link href='css/argylelabs.css' rel='stylesheet' type="text/css">
 
 </head>
 
 
-<body style="border: 5px solid black">
-<div class='space'></div>
-<div class='first'>
-<table align='center'>
-<tr>
-<td><img src="argylepattern.jpeg" height='47' width='43'></td>
-<td class='logo'> Argyle Labs </td>
-</tr>
-</table>
-<i>Creation - Innovation - Acceleration</i>
-<br>
-<i> Build - Grow - Prosper </i>
-</div>
+<body>
+	
+	<div class='space'></div>
+	
+	<div class='hero' id='first'>
+		<div id='logo'>
+			<table align='center'>
+				<tr>
+					<td><img src="images/argylepattern.jpeg" height='47' width='43'></td>
+					<td class='logo' id='text'> Argyle Labs </td>
+				</tr>
+			</table>
+		</div>
+		<div class='words'>
+			<div id='topwords'>
+				<div>Creation</div>
+				<div>Innovation</div>
+				<div>Acceleration</div>
+			</div>
+			<div id='btmwords'>
+				<div>Build</div>
+				<div>Grow</div>
+				<div>Prosper</div>
+			</div>
+			
+			<i>Creation - Innovation - Acceleration</i>
+			<br>
+			<i> Build - Grow - Prosper </i>
+		</div>
+	</div>
+	<div class='bottom-space'>
+		<div id='console_output'>
+			<?php
 
-
+			?>
+		</div>
+	</div>
 </body>
 
 <script>
+// TRY TO GUESS WHAT THIS NEXT CODE DOES - IT WASN'T INTENTIONAL!
+/*
 	window.onresize = function () {
 		var borderOffset = -2*parseInt(document.body.style.border);
 		var doc = document.documentElement;
 		document.body.style.width = doc.clientWidth + borderOffset;
-//		document.body.style.width = window.clientWidth - 2*parseInt(document.body.style.border); 
 		document.body.style.height = document.documentElement.clientHeight - 2*parseInt(document.body.style.border);
-//		document.body.style.height = Math.max(doc.clientHeight, window.clientHeight) + borderOffset;
-		
 	};
+*/
+	// or document.body.onmousemove..
+
+	var i = true;
+	var frameCount = 0 		// counter used to set animation frames
+	window.cursorTimer = 0;
+	//killwindow = window.onmousemove = function () {};
+
+	window.onmousemove = function () {
+		//('here')
+		startTimer();
+		//alert('backagain')
+	}
+
+	window.onmouseclick = function () {
+		alert('clicked!');
+		clearInterval(cursorTimer);
+	}
+
+	function startTimer () {		
+		console.log(i);
+		if (i) {
+			cursorTimer = setInterval(
+				function () { 
+					cursorBorderBlink(null, null, null);
+					frameCount++;
+
+				}, 
+				1000
+			);
+			i = false;
+			//killwindow = window.onmousemove = function () {};
+			window.onmousemove = function () {};
+		}
+
+	}
+
+	function cursorBorderBlink (location, interval, size) {
+		var theLogoText = document.getElementById('text');
+		theLogoText.style['border-right'] = theLogoText.style['border-right-color'] == 'white' ? '2px solid black' : '2px solid white';
+		//document.getElementById('text').style['border-right'] = '3px solid white';
+	}
+
+	function imgSizeOnScreenSize () {
+
+	}
+
 </script>
 </html>

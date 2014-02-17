@@ -1,0 +1,53 @@
+/* replace body with desired element */
+body
+{
+	animation: moving_background 30s;
+	-webkit-animation: moving_background 30s;
+	-moz-animation: moving_background 30s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	-webkit-animation-direction: alternate;
+	animation-timing-function: linear;
+	-webkit- animation-timing-function: linear;
+}
+
+/* ///TODO: parallax scrolling */
+
+
+/* ZOOM */
+@-webkit-keyframes moving_background_zoom
+{
+	from 
+	{
+		background-size: 100% 100%;
+	}
+	to 
+	{
+		background-size: 150% 150%;
+	}
+}
+
+@keyframes moving_background_zoom
+{
+	from 
+	{
+		background-size: 100% 100%;
+	}
+	to 
+	{
+		background-size: 150% 150%;
+	}
+}
+
+@-moz-animation moving_background_zoom
+{
+	from 
+	{
+		background-size: 100% 100%;
+	}
+	to 
+	{
+		background-size: 150% 150%;
+	}
+}

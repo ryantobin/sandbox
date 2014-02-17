@@ -1,0 +1,41 @@
+	html, body {
+		/*padding: 0;*/
+	}
+	body {
+		position: relative;	
+	}
+
+	.space {
+	  height: 25%;
+	}
+
+	.hero #first {
+	  margin: 50px 0px; 
+	  padding:0px;
+	  text-align:center;
+	}
+
+	.bottom-space {
+
+	}
+
+	.logo#text {
+		font-family: 'Doppio One', sans-serif;
+		color: black;
+		font-size: 42px;
+		padding-right: 10px;
+		border: 3px solid white;
+	}
+	i {
+		width: 100%;
+		text-align: center;
+		display: none;
+	}
+	.words {
+		height: 1px;
+		width: 1px;
+	}
+	#topwords, #btmwords {
+		display: inline;
+		font-style: italic;
+	}
