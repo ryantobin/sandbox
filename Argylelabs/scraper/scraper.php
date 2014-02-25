@@ -36,6 +36,8 @@ function __construct() {
 	echo "enough - end of __construct()";
 }
 
+// to traverse the elements of the downloaded page -- try using the PHP DOMElement class
+// http://www.php.net/manual/en/class.domelement.php
 
 ///TODO: regex to extra filers
 // (for first sample before REGEX) look for any link that is marked with .mp4 in the pathname
