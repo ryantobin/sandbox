@@ -2,6 +2,8 @@
 
 ?>
 
+<script src="../../../assets/js/jquery-1.10.2.min.js"></script>
+
 <h1>Test -- File System Blog</h1>
 
 <div id='directory'>
@@ -56,4 +58,6 @@ echo "sourcepath before: $sourcepath<br>";
 </div>
 
 
-
+<script>
+	alert('hello');
+</script>
