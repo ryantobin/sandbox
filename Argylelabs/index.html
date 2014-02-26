@@ -1,4 +1,4 @@
-
+<!doctype html>
 <html>
 <head>
 <title>
@@ -27,11 +27,11 @@ Argyle Labs
 			</table>
 		</div>
 		<div class='words'>
-			<div id='topwords'>
-				<div>Creation</div>
-				<div>Innovation</div>
-				<div>Acceleration</div>
-			</div>
+			
+				<div id='first-top'>Creation</div>
+				<div id='second-top'>Innovation</div>
+				<div id='third-top'>Acceleration</div>
+			
 			<div id='btmwords'>
 				<div>Build</div>
 				<div>Grow</div>
@@ -107,6 +107,26 @@ Argyle Labs
 	function imgSizeOnScreenSize () {
 
 	}
+	function topWordWidth() {
+		var elem1 = document.getElementById('first-top');
+		var elem2 = document.getElementById('second-top');
+		var elem3 = document.getElementById('third-top');
+
+		var elem1Width = getComputedStyle(elem1).width;
+		var elem2Width = getComputedStyle(elem2).width;
+		var elem3Width = getComputedStyle(elem3).width;
+
+
+		var totalWidth = elem1Width + elem2Width + elem3Width;
+
+		elem1.style.left = -(totalWidth/2);
+		elem2.style.left = elem2width/2;
+		elem3.style.left = totalWidth/2 - elem3Width;
+
+
+	}
+
+	topWordWidth();
 
 </script>
 </html>
