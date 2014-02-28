@@ -29,10 +29,10 @@
 		padding-right: 10px;
 		border: 3px solid white;
 	}
-	i {
+	i {  /* the only words with this right now are the first words that were on this website */
 		width: 100%;
 		text-align: center;
-		display: none;
+		display: none; /* THIS IS A TRICK RIGHT NOW FOR DEVELOPMENT */
 	}
 	.words {
 		height: 1px;

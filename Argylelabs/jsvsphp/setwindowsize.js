@@ -1,0 +1,6 @@
+// setwindowsize.js
+
+(function () {
+	
+
+} (window);
