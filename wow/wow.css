@@ -1,0 +1,68 @@
+/* wow.css */
+
+html {
+		font-family: arial;	
+	}
+	body {
+		background: url(Chrysanthemum.jpg) no-repeat 0 0;
+		height: 100%;
+		background-size: cover;
+	}
+	#title-bar {
+		text-align: center;
+		font-size: 2em;
+		background: white;
+		color: orange;
+		height: 2em;
+		line-height: 2em;
+		width: 100%;
+		border-radius: 0 0 8px 8px;
+		-moz-border-radius: 0 0 8px 8px;
+		-webkit-border-radius: 0 0 8px 8px;
+	}
+	#video-container {
+		/* background: black; */
+		border: 5px solid black;
+		width: 640px;
+		height: 360px;
+		position: relative;
+		margin: auto;
+		top: 40px;
+		background: black; /* Old Browsers */
+		background: -moz-linear-gradient(top, #000000 50%, firebrick 100%); /* FF3.6+ */
+		background-image: linear-gradient(top, #000000 50%, #B22222 100%);
+		background-image: -o-linear-gradient(top, #000000 50%, #B22222 100%);
+		background-image: -moz-linear-gradient(top, #000000 50%, #B22222 100%);
+		background-image: -webkit-linear-gradient(top, #000000 50%, #B22222 100%);
+		background-image: -ms-linear-gradient(top, #000000 50%, #B22222 100%);
+	}
+	#main-video {
+
+	}
+	#twitter-feed-container {
+		right: 0;
+		top: 174px;
+		width: 280px;
+		height: 400px;
+		position: fixed;			
+	}	
+	#twitter-feed-background {
+		background: white;
+		opacity: .5;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		border-radius: 8px 0px 0px 8px;
+		-moz-border-radius: 8px 0 0px 8px;
+		-webkit-border-radius: 8px;
+
+	}
+	#twitter-feed {
+		position: relative;
+		transition: 3;
+		opacity: 1.0;
+		transition: top 2s;
+		-moz-transition: top 2s;
+		-webkit-transition: top 2s;
+		padding: 10px;
+	}
