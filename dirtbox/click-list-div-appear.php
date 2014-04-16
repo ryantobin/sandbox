@@ -4,7 +4,7 @@
 
 		<ul>
 			<li>getTitles</li>
-			<li>getUnits<li>
+			<li>getUnits</li>
 			<li>getRoles</li>
 		</ul>
 
@@ -13,31 +13,67 @@
 	<div id='gettitles'>
 		This is the getTitles div
 	</div>
-	<div id='getUnits'>
+	<div id='getunits'>
 		This is the getUnits div
 	</div>
-	<div id='getRoles'>
+	<div id='getroles'>
 		This is the getRoles div
 	</div>
 </section>
 
 <script>
+window.onload = function () 
+{
+	// add span around li's
+	var lis = document.getElementsByTagName('li');
+	var li;
+	// Array.forEach(function() {}); // Requires ECMASCript5
+	//lis.forEach( );
 
-// add span around li's
-var lis = document.getElementsByTagName('li');
-
-// Array.forEach(function() {}); // Requires ECMASCript5
-lis.forEach
-(
-
-	console.log(this);
-
-	function () 
+	for(var i = 0; i < lis.length; i++)
 	{
+		li = lis[i];
+		console.log(li);
+		var liLink = li.innerText.toLowerCase();
+		console.log(liLink);
+		//li.onclick = "hideDiv("+liLink+")";
+		li.setAttribute("onclick", "showDiv('"+liLink+"')");
+		li.name = liLink;
+		console.log(li.name);
+	}
+} ();
+
+
+
+function hideDiv(id)
+{
+	document.getElementById(id).style.display = 'none';
+}
+
+function showDiv(id)
+{
+	var currentActive = 
+
+	if(currentActive[0])
+	{
+		delete(currentActive[0].className);
+		currentActive[0].style.display = 'none';
+	}
+
+	document.getElementById(id).className = 'activeLi';
+	document.getElementById(id).style.display = 'block';
+}
+
+
+
+function lowerCase(elem) 
+	{
+		console.log(this);
+		console.log(elem);
+		this = elem;
 		this.innerHTML = "<span>"+this.innerText.toLowerCase()+"</span>";
 	}
 
-);
 
 /** // From proximify auth-api //
 var actionsList = $('#actions li span');
