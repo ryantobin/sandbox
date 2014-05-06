@@ -1,0 +1,5 @@
+grey boxes transition between states by shrinking/moving
+
+The description box is draggable
+
+Channel tips are links that when hovered provide more information about what it does, as well as a link to what it affects
