@@ -3,7 +3,13 @@
  * index.php
  *
  */
-
+?>
+<html>
+<head>
+  <title>Photoshow</title>
+  <link type='text/css' rel='stylesheet' href='photoshow.css'>
+  <script src='../js/jquery-1.8.2.js'>
+</head>
 <script>
 
 /* get/create list of images stored in a folder */
@@ -48,5 +54,17 @@ var image;
 // slide similar pictures back and forth (only show the good ones but provide a way to show all
 
 // download - email - select/send/link
+</script>
+
+<?php
 
 ?>
+<body>
+  <div id='content'>
+    <div id='cover'></div>
+    <div class='welcome-splash'></div>
+    <div class='first-splash'></div>
+    <div class='second-splash'></div>
+  </div>  
+</body>
+</html>
