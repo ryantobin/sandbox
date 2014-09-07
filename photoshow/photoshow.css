@@ -23,7 +23,9 @@ body, html, .container {
 	opacity: 0;
 	position: relative;
 	height:100%;
+	transition: ;
 }
+
 /*== Next Clicker ==*/
 #next-clicker {
 	position:fixed;
@@ -38,7 +40,6 @@ body, html, .container {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-
 	position: relative;
 	height: 100%;
 }
