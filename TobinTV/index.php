@@ -42,8 +42,10 @@
 		<?php
 			include 'users.php';
 
-			if (is_admin($_session_user_id) === true) {
-				echo "Admin!";
+			if (isset( $GLOBALS['current_screen'] ) ) {
+				if (is_admin($_session_user_id) === true) {
+					echo "Admin!";
+				}
 			}
 		?>
 	</div>
