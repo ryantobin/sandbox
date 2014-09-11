@@ -40,6 +40,8 @@
 			<a href="http://66.212.238.243/proxy/">Canadian Proxy</a>
 		</p>  
 		<?php
+			include 'users.php';
+
 			if (is_admin($_session_user_id) === true) {
 				echo "Admin!";
 			}
