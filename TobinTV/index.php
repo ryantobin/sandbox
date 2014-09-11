@@ -34,7 +34,7 @@
 <body>
 	<div id="wrapper">
 		<div id="logo">
-			<a href="http://www.tobin.tv"><img src="http://66.212.238.243/proxy/tobindottv.png"></a>
+			<a href="http://www.tobin.tv"><img src="images/tobindottv.png"></a>
 		</div>
 		<p class="center">
 			<a href="http://66.212.238.243/proxy/">Canadian Proxy</a>
