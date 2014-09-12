@@ -17,6 +17,7 @@
 
 // DEFINE FOLDER NAME HERE - your photo folder in the website directory
 $picturesFolderName = "pics";
+$picturesFolderName = "../../images/Pats";
 // $picturesPath = "../".$picturesFolderName;
 $picturesPath = $picturesFolderName;
 //echo $picturesPath;
@@ -24,20 +25,18 @@ $listOfFilesInPicturesPath;
 $listOfImages = array();
 
 // GET FILE NAMES IN THE FOLDER
-//$listOfFilesInPicturesPath = scandir($picturesPath);
-$listOfFilesInPicturesPath = scandir("E:\Backups\Photos\Israel");
-
-//print_r($listOfFilesInPicturesPath);
+$listOfFilesInPicturesPath = scandir($picturesPath);
 
 // If its an image add it to the listOfImages
 foreach ($listOfFilesInPicturesPath as $nameOfFile)
+//foreach ($testFolder as $nameOfFile)
 {
 
 	//if (itIsAnImage)
-	if (endsWith('.jpg', $nameOfFile))
-	//if (true)
+	if (endsWith('.jpg', $nameOfFile) || endsWith('.JPG', $nameOfFile) || endsWith('.png', $nameOfFile) || endsWith('.PNG', $nameOfFile))
+	// if (true)
 	{
-		//echo "name:".$nameOfFile;
+		// echo "name:".$nameOfFile;
 		// append (nameOfFile) to (listOfImages)
 		//($listOfImages) += ($nameOfFile);	
 		array_push($listOfImages,$nameOfFile);
@@ -49,7 +48,7 @@ foreach ($listOfImages as $nameOfFile)
 {
 	//echo '<img src="'+picturesPath+'/'+nameOfFile+'">';
 	//echo '<br>'.$picturesPath.'/'.$nameOfFile;
-	echo '<img src="'.$picturesPath.'/'.$nameOfFile.'" width="100%">';
+	echo '<img src="'.$picturesPath.'/'.$nameOfFile.'" class="photoimage" width="100%">';
 
 }
 /*
