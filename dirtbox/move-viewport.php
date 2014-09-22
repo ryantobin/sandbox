@@ -16,7 +16,7 @@
 	}
 
 	.navigator table {
-		position: absolute;
+		position: fixed;
 		top: 60px;
 		right: 10%;
 		background-color: white;
@@ -33,51 +33,19 @@
 	// click to move 'box'
 	function moveViewport(direction) {
 		var box = document.getElementById('box');
-///TODO: convert to switch statement?
-		// switch (direction) {
-		// 	case "left":
-		// 		break;
-		// 	case "right":
-		// 		break;
-		// 	case "up":
-		// 		break;
-		// 	case "down":
-		// 		break;
-		// }
-		if(direction == 'left') {
-			// var currentPos = document.getElementById('container').scrollLeft;
-			document.getElementById('container').scrollLeft = 10;
-			// document.body.scrollLeft = 10;
-
-			// currentPos = currentPos ? currentPos : '0px';
-			// var currentPosPx = parseInt(currentPos);
-			// var newPos = currentPosPx-20;
-			// box.style.left = newPos+"px";
-		}
-		if(direction == 'right') {
-			// var currentPos = document.getElementById('container').scrollRight;
-			document.getElementById('container').scrollRight = 10;
-			// document.body.scrollRight = 10;
-			
-			// var currentPos = document.getElementById('box').style.left;
-			// currentPos = currentPos ? currentPos : '0px';
-			// var currentPosPx = parseInt(currentPos);
-			// var newPos = currentPosPx+20;
-			// box.style.left = newPos+"px";
-		}
-		if(direction == 'up') {
-			var currentPos = document.getElementById('box').style.top;
-			currentPos = currentPos ? currentPos : '0px';
-			var currentPosPx = parseInt(currentPos);
-			var newPos = currentPosPx-20;
-			box.style.top = newPos+"px";
-		}
-		if(direction == 'down') {
-			var currentPos = document.getElementById('box').style.top;
-			currentPos = currentPos ? currentPos : '0px';
-			var currentPosPx = parseInt(currentPos);
-			var newPos = currentPosPx+20;
-			box.style.top = newPos+"px";
+		switch (direction) {
+			case "left":
+				window.scrollLeft();
+				break;
+			case "right":
+				window.scrollRight();
+				break;
+			case "up":
+				window.scrollUp();
+				break;
+			case "down":
+				window.scrollDown();
+				break;
 		}
 	}
 ///TODO: on click of arrows, change arrow color, or do some sort of highlighting/notification
@@ -86,7 +54,22 @@
 
 		// moveBox
 	}
+	// this may be overriding a jQuery function
+	window.scrollUp = function () {
+		window.scrollBy(0,-100);
+	};
 
+	window.scrollDown = function () {
+		window.scrollBy(0,100);
+	};
+
+	window.scrollLeft = function () {
+		window.scrollBy(-100,0);
+	};
+
+	window.scrollRight = function () {
+		window.scrollBy(100,0);
+	};
 </script>
 
 <body>
@@ -99,17 +82,17 @@
 	<table>
 		<tr>
 			<td></td>
-			<td onclick="moveBox('up')" class='clickable arrow'>&#9650;</td>
+			<td onclick="moveViewport('up')" class='clickable arrow'>&#9650;</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td onclick="moveBox('left')" class='clickable arrow'>&#9668;</td>
+			<td onclick="moveViewport('left')" class='clickable arrow'>&#9668;</td>
 			<td></td>
-			<td onclick="moveBox('right')" class='clickable arrow'>&#9658;</td>
+			<td onclick="moveViewport('right')" class='clickable arrow'>&#9658;</td>
 		</tr>
 		<tr>
 			<td></td>
-			<td onclick="moveBox('down')" class='clickable arrow'>&#9660;</td>
+			<td onclick="moveViewport('down')" class='clickable arrow'>&#9660;</td>
 			<td></td>
 		</tr>
 	</table>
