@@ -1,5 +1,7 @@
 <html>
 
+<script type='text/javascript' src='../js/jquery-1.8.2.js'></script>
+
 <style>
 	#container {
 		background-image: url('../images/Albert_Bierstadt_BIA030.jpg');
@@ -35,7 +37,8 @@
 		var box = document.getElementById('box');
 		switch (direction) {
 			case "left":
-				window.scrollLeft();
+				// window.scrollLeft();
+				$(window).scrollLeft();
 				break;
 			case "right":
 				window.scrollRight();
@@ -50,9 +53,11 @@
 	}
 ///TODO: on click of arrows, change arrow color, or do some sort of highlighting/notification
 	function clickDirection(direction) {
-		// highlight arrow
-
-		// moveBox
+		//TODO: highlight arrow on click
+		// moveViewport(direction);
+		$(window).animate({
+			duration: 500
+		},500, moveViewport(direction));
 	}
 	// this may be overriding a jQuery function
 	window.scrollUp = function () {
@@ -63,9 +68,9 @@
 		window.scrollBy(0,100);
 	};
 
-	window.scrollLeft = function () {
-		window.scrollBy(-100,0);
-	};
+	// window.scrollLeft = function () {
+	// 	window.scrollBy(-100,0);
+	// };
 
 	window.scrollRight = function () {
 		window.scrollBy(100,0);
@@ -82,17 +87,17 @@
 	<table>
 		<tr>
 			<td></td>
-			<td onclick="moveViewport('up')" class='clickable arrow'>&#9650;</td>
+			<td onclick="clickDirection('up')" class='clickable arrow'>&#9650;</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td onclick="moveViewport('left')" class='clickable arrow'>&#9668;</td>
+			<td onclick="clickDirection('left')" class='clickable arrow'>&#9668;</td>
 			<td></td>
-			<td onclick="moveViewport('right')" class='clickable arrow'>&#9658;</td>
+			<td onclick="clickDirection('right')" class='clickable arrow'>&#9658;</td>
 		</tr>
 		<tr>
 			<td></td>
-			<td onclick="moveViewport('down')" class='clickable arrow'>&#9660;</td>
+			<td onclick="clickDirection('down')" class='clickable arrow'>&#9660;</td>
 			<td></td>
 		</tr>
 	</table>
