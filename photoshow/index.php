@@ -16,7 +16,7 @@
 <body>
 
 <?php
-
+// GET INITIAL IMAGES FROM FOLDER AND CREATE IMAGES FOR THEM
 // DEFINE FOLDER NAME HERE - your photo folder in the website directory
 $picturesFolderName = "../../images/Pats";
 $picturesFolderName = "pics";
@@ -42,5 +42,10 @@ function moveRight(elem) {
 }
 
 </script>
-
+<?php
+///TODO: Be able to make changes to a page and save them to a counter somewhere
+//		Be able to count the number of upvotes (click/javascript/change display/send server info)
+//		Backend database on server (SQL on webserver?)
+//		Function (AJAX) to send
+?>
 </html>
