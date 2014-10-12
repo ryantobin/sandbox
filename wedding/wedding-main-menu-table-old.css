@@ -1,0 +1,36 @@
+#main-menu table {
+	text-align: center;
+	background: white;
+	padding: 0;
+	margin: 0;
+}
+#main-menu table tr {
+	margin: 0; padding: 0;
+}
+#main-menu table td {
+	width: 168px;
+	padding: 10px 32px;
+	background-color: #EDD8C7;
+	white-space: nowrap;
+	font-weight: bold;
+	color: #5A390F;
+	transition: background-color 0.5s ease;
+}
+#main-menu table td a {
+	position: relative;
+	display: block;
+	width: 100%;
+	background: red;
+	cursor: wait;
+}
+#main-menu table td.current-page {
+	background-color: white;
+
+}
+#main-menu table td.current-page:hover {
+	cursor: default;
+}
+#main-menu table td:hover {
+	background: white;
+	cursor: pointer;
+}
