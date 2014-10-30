@@ -1,0 +1,4 @@
+This folder is intended for a project to create shortcuts (one click buttons for whatever OS)
+to open a set of programs or a state -- state of a dev environment, state of thinking, place
+be able to go back to that setup -- or bring it up
+
