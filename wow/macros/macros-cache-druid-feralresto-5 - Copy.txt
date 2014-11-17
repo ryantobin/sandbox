@@ -1,0 +1,110 @@
+VER 3 0100000000000012 "Attack" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence reset=target Faerie Fire, Force of Nature
+END
+VER 3 0100000000000003 "BearMe" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast !Bear Form
+/use Alliance Battle Standard
+/use Inherited Mark of Tyranny
+/use Superior Healing Potion
+/cast Survival Instincts
+END
+VER 3 0100000000000005 "Charge" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [form:3,harm,nocombat,nostealth] Prowl
+/cancelform [form:4,@mouseover, help][noform:3,@mouseover, help]
+/cast [noform:3,@mouseover, harm] Bear Form;
+/cast [@mouseover, help] Wild Charge; /cast [@mouseover, harm][] Wild Charge;
+END
+VER 3 010000000000000C "Cure" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,help][help][] Nature's Cure
+END
+VER 3 0100000000000011 "Escape" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [combat] Shadowmeld
+/cast [noflyable] !Prowl
+/cast [stealth,form:2] Dash
+/cast [flyable] Travel Form
+END
+VER 3 0100000000000008 "Lifebloom" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help][help] Lifebloom
+/cast [stance:1/2,harm] Thrash
+/cast [] Lifebloom
+END
+VER 3 0100000000000007 "Mangle/Maw" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:alt, @player][@mouseover, help][help][@notarget] Healing Touch; 
+/cast [form:1] Mangle
+/cast [form:2] Shred
+/cast [noform:1/2, harm] Cat Form
+END
+VER 3 010000000000000F "NS/HT" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [mod:alt] Inherited Mark of Tyranny;
+/cast [mod:alt, @player][help] Nature's Swiftness;
+/cast [mod:alt,@player][@mouseover, help][help]  Healing Touch;
+/cast [harm,stance:2] Ferocious Bite
+/cast [harm] Wrath; [] Healing Touch
+END
+VER 3 010000000000000E "Regrowth" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:alt,@player][@mouseover,help][help] Regrowth
+/cast [harm, form:1] Mangle
+/cast [harm, form:2] Shred
+/cast [] Regrowth
+END
+VER 3 0100000000000001 "Rejuv/Moonfire" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:alt,@player] Rejuvenation
+/cast [@mouseover, harm] Moonfire
+/cast [@mouseover, help][help] Rejuvenation
+/cast [] Moonfire
+ 
+END
+VER 3 0100000000000010 "Roar" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack [nostealth]
+/cast [noform:2] Cat Form
+/cast Savage Roar
+END
+VER 3 0100000000000004 "Root" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, harm][] Entangling Roots
+END
+VER 3 010000000000000D "Self-Cure" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@player] Nature's Cure
+END
+VER 3 010000000000000B "Self-Swiftmend" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@player] Swiftmend
+END
+VER 3 0100000000000002 "Stealth" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/dismount
+/cancelform [stance:3]
+/stopattack
+/cast [combat] Shadowmeld
+/cast Prowl
+END
+VER 3 010000000000000A "Swiftmend" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,help][help][] Swiftmend
+END
+VER 3 0100000000000009 "Tiger/Bite" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [noform] Wrath
+/cast [form:3, harm][] Tiger's Fury
+/cast [form:3, harm][] Shred
+END
+VER 3 0100000000000006 "Travel" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/dismount
+/cast [swimming] TRavel form
+/cast [indoors] !Cat Form
+/cast [flyable,nocombat] Travel Form
+/cast !Travel Form
+END

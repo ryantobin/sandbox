@@ -1,0 +1,101 @@
+VER 3 0100000000000015 "BearMe" "SPELL_DRUID_MIGHTOFURSOC"
+#showtooltip Might of Ursoc
+/cast [@player] Ironbark
+/cast Might of Ursoc
+/cast Frenzied Regeneration
+/cast Heart of the Wild(Talent)
+/use Healthstone
+/cast Stampeding Roar
+/cast Survival Instincts
+/use Horde Battle Standard
+END
+VER 3 0100000000000006 "BoomCharge" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cancelform [form:4,@mouseover, help][noform:4,help]
+/cast [noform:3,@mouseover, harm] Bear Form;
+/cast [@mouseover, help] Wild Charge; /cast [@mouseover, harm] Wild Charge; wild Charge
+END
+VER 3 010000000000000E "Boomkin" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cancelform [flying]
+/cast !Moonkin Form
+END
+VER 3 0100000000000016 "Burst" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Celestial Alignment
+/cast Starfall
+END
+VER 3 0100000000000008 "Cleanse" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover, help][help] Nature's Cure;
+/cast [target=mouseover, help][help] Remove Corruption;
+END
+VER 3 0100000000000013 "FF/Mushroom" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [harm] Faerie Fire; [] Wild Mushroom: Bloom
+/use Battle Standard of Coordination
+END
+VER 3 0100000000000011 "Healing Touch" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:alt,@player][@mouseover, help, nodead] [help]Healing Touch; [@mouseover, harm][harm] [] Starfire;
+/castsequence [@mouseover, harm][harm] [] Starsurge;
+END
+VER 3 010000000000000F "HT/Wrath" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [mod:alt] Horde Battle Standard;
+/cast [mod:alt] Heart of the Wild(Talent)
+/cast [mod:alt] Life Spirit;
+/cast [mod:alt, @player][help] Nature's Swiftness;
+/cast [mod:alt,@player][@mouseover, help][help] Healing Touch 
+/cast [] Wrath 
+END
+VER 3 0100000000000005 "Leap" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cancelform [form:4,@mouseover, help][noform:4,@mouseover,help]
+/cast [noform:3,@mouseover, harm] Bear Form;
+/cast [@mouseover, help] Wild Charge; /cast [@mouseover, harm] Wild Charge; [noform:4, help] Wild Growth; Wild Charge
+END
+VER 3 010000000000000A "Lifebloom" "INV_MISC_QUESTIONMARK"
+/cast [modifier:alt, target=player][target=mouseover, help][help] Lifebloom; [form:3,harm] Rake; [form:1, harm] Swipe; [@focus][] Lifebloom
+END
+VER 3 0100000000000007 "Mangle/Maul" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:alt, @player][@mouseover, help][help][@notarget] Regrowth; 
+/cast [form:1] Maul
+/stopcasting [form:1]
+/cast [form:1/3] Mangle
+END
+VER 3 0100000000000002 "Moonfire/Rejuv" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:alt,@player][@mouseover, help, nodead] [help]Rejuvenation; 
+/cast [@mouseover, harm][noform:3,harm][harm]  Moonfire
+/cast [form:3,harm] Shred; Rejuvenation
+END
+VER 3 010000000000000B "Nature's Swiftne" "INV_MISC_QUESTIONMARK"
+/cast [mod:alt, @player][@mouseover, help][help] Nature's Swiftness; 
+/cast [stealth] Ravage
+/cast Ferocious Bite
+END
+VER 3 0100000000000014 "Root" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, harm][harm][@focus, exists][] Entangling Roots
+END
+VER 3 0100000000000009 "Self Cleanse" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=player] Nature's Cure
+/cast [target=player] Remove Corruption
+END
+VER 3 0100000000000004 "Self Swiftmend" "INV_MISC_QUESTIONMARK"
+#showtooltip Swiftmend
+/cast [target=player] Swiftmend
+END
+VER 3 010000000000000C "Swiftmend" "INV_MISC_QUESTIONMARK"
+/cast [@mouseover, help] Ironbark
+/cast [@mouseover, help][help] Swiftmend; [form:1,harm] Lacerate; [form:3] Maim; [] Swiftmend
+END
+VER 3 0100000000000003 "Travel" "INV_MISC_QUESTIONMARK"
+/dismount
+/cast [indoors] !Cat Form
+/cast [flyable,nocombat] Travel Form
+/cast !Travel Form
+END

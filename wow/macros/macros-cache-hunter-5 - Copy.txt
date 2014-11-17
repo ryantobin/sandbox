@@ -1,0 +1,95 @@
+VER 3 0100000000000001 "Aimed Shot" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/petattack
+/cast Aimed Shot
+END
+VER 3 0100000000000003 "Arcane" "INV_MISC_QUESTIONMARK"
+#showtooltip Arcane Shot
+/stopcasting
+/petattack
+/cast Arcane Shot
+END
+VER 3 0100000000000008 "Boom" "INV_MISC_QUESTIONMARK"
+/cast Bestial Wrath
+/cast Dire Beast
+/cast Rapid Fire
+END
+VER 3 010000000000000A "CS" "INV_MISC_QUESTIONMARK"
+/stopcasting
+/cast [@mouseover, harm][] Counter Shot
+END
+VER 3 0100000000000013 "FD/Trap" "INV_MISC_QUESTIONMARK"
+/cast
+END
+VER 3 010000000000000C "Glaive" "INV_MISC_QUESTIONMARK"
+#showtooltip Glaive Toss
+/stopcasting
+/cast [@mouseover, harm][] Glaive Toss
+END
+VER 3 0100000000000010 "Heal" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Cannibalize(Racial)
+/use Heavy Windwool Bandage
+END
+VER 3 0100000000000007 "Kill Shot" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/stopcasting
+/stopcasting
+/cast Kill Shot
+END
+VER 3 0100000000000002 "KillCmd" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/petattack
+/stopcasting
+/cast Kill Command
+/use Explosive Barrel
+END
+VER 3 0100000000000004 "Mark" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/petattack
+/cast [@mouseover, harm][harm][] A Murder of Crows
+/petmoveto
+END
+VER 3 010000000000000D "Master's Call" "INV_MISC_QUESTIONMARK"
+#showtooltip Master's Call
+/cast Symbiosis
+/cast [@mouseover,help][@player] Master's Call
+END
+VER 3 010000000000000E "Mend Pet" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/petfollow
+/cast Mend Pet
+END
+VER 3 010000000000000B "Mount" "INV_MISC_QUESTIONMARK"
+#showtooltip Prideful Gladiator's Cape of Cruelty
+/cast [noflyable][] Black Wolf
+/use Prideful Gladiator's Cape of Cruelty
+/use Aerial Bombardment Cloak
+END
+VER 3 0100000000000005 "Pet" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nopet] Call Pet
+/cast [pet=dead] Revive Pet
+/cast [nocombat] Feed Pet
+/cast [combat] Mend Pet
+END
+VER 3 010000000000000F "Scatter Trap" "INV_MISC_QUESTIONMARK"
+#showootlip
+/stopcasting
+/cast [@mouseover, harm][] Chimaera Shot
+END
+VER 3 0100000000000006 "Stampede/Misdire" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [help][@mouseover,help] Misdirection
+/cast [@mouseover,harm][harm] Stampede
+/cast [] Traveler's Tundra Mammoth
+END
+VER 3 0100000000000009 "Trap Launcher" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast !Trap Launcher
+/cast Snake Trap
+END
+VER 3 0100000000000012 "Trinket" "INV_MISC_QUESTIONMARK"
+/cast Will of the Forsaken
+/use Grievous Gladiator's Medallion of Tenacity
+END

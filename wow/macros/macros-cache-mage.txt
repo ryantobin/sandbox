@@ -1,0 +1,93 @@
+VER 3 0100000000000003 "AoE Grind" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence reset=10 Frost Nova, Ice Barrier, Icy Veins, Blizzard, Blink, Cone of Cold
+END
+VER 3 0100000000000009 "Arcane Explosion" "INV_MISC_QUESTIONMARK"
+/cast Arcane Explosion
+/petattack
+END
+VER 3 010000000000000F "Buff" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence reset=target Arcane Brilliance, Frost Armor
+END
+VER 3 0100000000000006 "Counter Spell" "INV_MISC_QUESTIONMARK"
+/stopcasting
+/cast [target=mouseover,harm] Counterspell; Counterspell
+END
+VER 3 0100000000000012 "FireBlast/Flame" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, harm][harm][] Fire Blast
+END
+VER 3 0100000000000002 "Frost Bolt" "INV_MISC_QUESTIONMARK"
+#showtooltip Frostfire Bolt
+/cast [@mouseover,harm][]Frostfire Bolt
+/petattack
+END
+VER 3 010000000000000C "Frost Nova" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cancelaura Ice Block
+/stopcasting
+/petpassive
+/dismount
+/castsequence reset=21 Frost Nova, Cold Snap
+END
+VER 3 0100000000000008 "Frostbolt" "INV_MISC_QUESTIONMARK"
+#showtooltip Frostbolt
+/cast [target=mouseover,harm][harm][] Frostbolt
+/petattack
+END
+VER 3 0100000000000014 "Heal" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use Master Healing Potion
+/use Heavy Windwool Bandage
+/use Healthstone
+END
+VER 3 010000000000000E "Health" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/petfollow
+/use [nocombat] Conjured Mana Buns
+/cast [nocombat] Conjure Refreshment Table
+/cast [combat][] Evocation
+END
+VER 3 0100000000000013 "IceBlock" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence reset=300 Ice Block, Cold Snap
+END
+VER 3 0100000000000010 "Icy Veins" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use Prideful Gladiator's Silk Handguards
+/cast Icy Veins
+/cast Frostbolt
+END
+VER 3 0100000000000004 "Lance" "INV_MISC_QUESTIONMARK"
+#showtooltip Ice Lance
+/stopcasting
+/cast [mod:alt] Healing Touch
+/cast [target=mouseover, harm][] Ice Lance
+END
+VER 3 010000000000000B "Live" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use Tyrannical Gladiator's Medallion of Cruelty
+/use Healthstone
+/cast Cold Snap
+END
+VER 3 0100000000000001 "Pet/Freeze" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nopet][target=pet, dead] Summon Water Elemental; Freeze
+END
+VER 3 0100000000000007 "Polymorph" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover,harm] Polymorph; Polymorph
+END
+VER 3 010000000000000D "Slowfall Mount" "INV_MISC_QUESTIONMARK"
+/dismount
+/cast [flyable] Sandstone Drake
+/cast Raven Lord
+/cast Slow Fall
+END
+VER 3 0100000000000011 "Time Warp" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use Kafa Press
+/cast Time Warp
+/cast Frost Bomb
+END

@@ -1,0 +1,103 @@
+VER 3 010000000000000C "Battle" "INV_MISC_QUESTIONMARK"
+/equip Prideful Gladiator's Greatsword
+/cast Battle Stance
+END
+VER 3 0100000000000010 "Boom" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Skull Banner
+/cast Recklessness
+/cast Slam
+/cast Heroic Strike
+END
+VER 3 0100000000000001 "Charge" "INV_MISC_QUESTIONMARK"
+#showtooltip
+#showtooltip charge
+/startattack
+/cast [@focus,mod:ctrl][target=mouseover,harm][harm] Charge
+/cast !Heroic leap
+END
+VER 3 0100000000000007 "cleave" "INV_MISC_QUESTIONMARK"
+/cast Cleave
+/cast Thunder Clap
+END
+VER 3 010000000000000B "Defense" "INV_MISC_QUESTIONMARK"
+#showtooltip Defensive Stance
+/equip Prideful Gladiator's Greatsword
+/cast [stance:1][stance:3] Defensive Stance
+END
+VER 3 0100000000000012 "Demointervene" "INV_MISC_QUESTIONMARK"
+#showtooltip demoralizing banner
+/cast Stampeding Shout(symbiosis)
+/target demoralizing banner
+/castsequence reset=10 !Demoralizing Banner, safeguard
+/targetlastenemy
+END
+VER 3 010000000000000F "Fear" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, harm][] Intimidating Shout
+END
+VER 3 0100000000000006 "Heroic Throw" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, harm][] Heroic Throw
+/cast [target=mouseover, harm][]throw
+END
+VER 3 0100000000000009 "Intervene" "INV_MISC_QUESTIONMARK"
+#showtooltip Intervene
+/cast [target=mouseover, help][help] !safeguard
+/target Mocking Banner
+/target Demoralizing Banner
+/target Skull banner
+/target Horde Battle Standard
+/assist [harm]
+/cast [target=mouseover, help][help] !safeguard
+/targetlastenemy
+END
+VER 3 010000000000000A "Live" "INV_MISC_QUESTIONMARK"
+/use Grievous Gladiator's Medallion of Cruelty
+/use Healthstone
+END
+VER 3 0100000000000015 "Mocking Banner" "INV_MISC_QUESTIONMARK"
+#showtooltip Mocking banner
+/cast Stampeding Shout(symbiosis)
+/target mocking banner
+/castsequence reset=10 !Mocking Banner, safeguard
+/targetlastenemy
+END
+VER 3 010000000000000E "Mount" "INV_MISC_QUESTIONMARK"
+/cast [flyable] Sandstone Drake
+/cast [!flyable] Mechano-Hog
+END
+VER 3 0100000000000014 "Pummel" "INV_MISC_QUESTIONMARK"
+#showtooltip pummel
+/cancelaura bladestorm
+/cancelaura hand of protection
+/cast [@mouseover, harm][harm] pummel
+END
+VER 3 0100000000000004 "RageDump" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Execute
+/stopcasting
+/cast Heroic Strike
+/use Chalice of Secrets
+END
+VER 3 0100000000000011 "Shield Wall" "INV_MISC_QUESTIONMARK"
+#showtooltip Shield wall
+/cast defensive stance
+/equip Grievous Gladiator's Hacker
+/equip Grievous Gladiator's Shield Wall
+/use Horde Battle Standard
+/cast Shield Wall
+END
+VER 3 010000000000000D "Smash" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Colossus Smash
+/cast Heroic Strike
+END
+VER 3 0100000000000003 "Storm Bolt" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,harm][] Storm Bolt
+END
+VER 3 0100000000000005 "Taunt" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, harm][] Taunt
+END

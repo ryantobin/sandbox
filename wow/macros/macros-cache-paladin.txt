@@ -1,0 +1,85 @@
+VER 3 0100000000000011 "Beacon/Hammer" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:alt, @player][@mouseover, help][help] Beacon of Light
+/cast [@mouseover, harm][harm] Hammer of Wrath
+/cast [] Beacon of Light
+END
+VER 3 0100000000000007 "Cleanse" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,help][] Cleanse
+END
+VER 3 0100000000000008 "Denounce" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:alt, @player][@mouseover, help][help] Holy Radiance
+/cast [harm] Denounce
+/cast [] Holy Radiance
+END
+VER 3 0100000000000012 "Freedom" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,help][@player][] Hand of Freedom
+END
+VER 3 010000000000000B "Hammer of Wrath" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,harm][] Hammer of Wrath
+END
+VER 3 010000000000000E "Hand of Freedom" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,help][] Hand of Freedom
+END
+VER 3 010000000000000F "Hand of Prot" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mosueover,help][help] Hand of Protection
+/cast [@mouseover,harm][harm][] Fist of Justice
+END
+VER 3 0100000000000002 "Heal/CS" "INV_MISC_QUESTIONMARK"
+/cast [mod:alt, @player] Flash of Light
+/cast [@mouseover, help][help] Flash of Light
+/cast [@mouseover, harm][] Crusader Strike
+END
+VER 3 0100000000000005 "Heal/HolyWrath" "INV_MISC_QUESTIONMARK"
+/cast [mod:alt, @player] Word of Glory
+/cast [@mouseover, help][help] Word of Glory
+/cast Holy Wrath
+END
+VER 3 0100000000000001 "Heal/TV" "INV_MISC_QUESTIONMARK"
+/cast [mod:alt, @player] Word of Glory
+/cast [@mouseover, help][help] Word of Glory
+/cast [@mouseover, harm][] Word of Glory
+END
+VER 3 0100000000000003 "Hearth" "INV_MISC_QUESTIONMARK"
+/castsequence reset=300 Divine Shield, Hearthstone
+END
+VER 3 0100000000000010 "Holy Radiance" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:alt, @player][@mouseover, help][help] Beacon of Light
+/cast [@mouseover, harm][harm] Judgment
+/cast [] Beacon of Light
+END
+VER 3 010000000000000A "Holy Shock" "INV_MISC_QUESTIONMARK"
+/cast [mod:alt, @player][@mouseover, help][@mouseover,harm][help][] Holy Shock
+END
+VER 3 0100000000000009 "Holy/CS" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:alt, @player] Flash of Light
+/cast [@mouseover, help][help] Flash of Light
+/cast [@mouseover, harm][harm] Crusader Strike
+/cast [] Flash of Light
+END
+VER 3 010000000000000C "Judge/Beacon" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:alt, @player][@mouseover, help][help] Beacon of Light
+/cast [@mouseover, harm][harm] Judgement
+/cast [] Beacon of Light
+END
+VER 3 0100000000000006 "Judgement" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,harm][] Judgment
+END
+VER 3 010000000000000D "Self Cleanse" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, player] Cleanse
+END
+VER 3 0100000000000004 "Taunt" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,harm][] Reckoning
+END
