@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+	margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+}
+footer, .footer-spacer {
+	height: 155px; /* '.push' must be the same height as 'footer' */
+}
+
+img {
+    -webkit-transition: width 2s ease-in; /* Safari 3.1 to 6.0 */
+    transition: width 2s ease-in;
+}
+
+.full-width {
+	width: 100%;
+}
