@@ -9,8 +9,9 @@ if(isset($_POST['submit']))
 	 Comment: '.$_POST['message'].'
 	';
 
-	//require '../assets/PHPMailer/class.phpmailer.php'; // include phpmailer class
-	require '../assets/PHPMailer/PHPMailerAutoload.php'; // require the autoloader (that should include phpmailer and its dependencies)
+	require_once('mailer/class.phpmailer.php');
+	require_once('mailer/class.smtp.php');
+	//require '../assets/PHPMailer/PHPMailerAutoload.php'; // require the autoloader (that should include phpmailer and its dependencies)
 	// Instantiate Class
 	$mail = new PHPMailer();
 
@@ -40,7 +41,7 @@ if(isset($_POST['submit']))
 	//require 'mailer.php';
 }
 ?>
-<form METHOD="POST" ACTION="">
+<form METHOD="POST" ACTION="rsvp.php">
 	<input TYPE="text" NAME="name" SIZE="30" placeholder='Name' class='form-input'>
 	<input TYPE="text" NAME="email" SIZE="30" placeholder='Email' class='form-input'>
 	<textarea NAME="message" ROWS=6 COLS=40 placeholder='Message'></textarea>
