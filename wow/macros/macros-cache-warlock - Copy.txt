@@ -1,0 +1,82 @@
+VER 3 0100000000000009 "buff" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence [@mouseover, help][] reset=target Unending Breath, Dark Intent, Soulstone
+/use Crystal of Insanity
+END
+VER 3 0100000000000007 "Conflag" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/dismount
+/cast !Fire and Brimstone
+/cast Conflagrate
+END
+VER 3 010000000000000E "Conflag/Gateway" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:alt] Demonic Gateway
+END
+VER 3 0100000000000010 "Demon" "INV_MISC_QUESTIONMARK"
+#showtooltip Command Demon
+/cast [pet:imp] Flee
+/cast Command Demon
+END
+VER 3 010000000000000F "DoT" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Soulburn
+/cast Soul Swap
+END
+VER 3 010000000000000D "Fel Flame" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, harm][] Fel Flame
+END
+VER 3 0100000000000011 "Guild Sig" "INV_MISC_QUESTIONMARK"
+/2 Paying 200g for a guild signature PST
+END
+VER 3 010000000000000C "Havoc" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, harm] Havoc
+/cast Chaos Bolt
+END
+VER 3 0100000000000004 "Havoc" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence [@target=mouseover, harm] Havoc, Chaos Bolt
+END
+VER 3 0100000000000002 "Immolate" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/petattack
+/cast Immolate
+END
+VER 3 0100000000000006 "Incinerate" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast !Fire and Brimstone
+/cast Incinerate
+END
+VER 3 010000000000000B "Portal" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence reset=30 Demonic Circle: Teleport, Demonic Circle: Summon
+END
+VER 3 0100000000000003 "Pot" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use Healthstone
+/use Master Healing Potion
+/cast Create Healthstone
+END
+VER 3 0100000000000001 "Shadowbolt" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/petattack
+/cancelaura Fire and Brimstone
+/cast Shadow Bolt
+END
+VER 3 0100000000000008 "Shadowburn" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/stopcasting
+/cast [@mouseover, harm][harm][] Shadowburn
+END
+VER 3 0100000000000005 "Shield" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Unending Resolve
+/use Horde Battle Standard
+END
+VER 3 010000000000000A "stone/banish" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, harm][harm] Banish
+/cast [] Create Soulwell
+END

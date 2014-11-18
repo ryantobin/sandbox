@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)https://www.docker.com/tryit/ -->
+<html class="no-js"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="globalsign-domain-verification" content="FPgfiL_YI3rt3dUG2P0lff_vunI_GrCBwz4Quwg6WL">
+  <meta charset="utf-8">
+  <!-- [if it IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <![endif]-->
+  <link rel="shortcut icon" href="https://d3oypxn00j2a10.cloudfront.net/0.11.2/favicon_whale.png">
+  <link rel="canonical" href="http://www.docker.com/tryit/">
+  <title>Online Tutorial - Try It! | Docker</title>
+  <meta name="description" content="Our free online tutorial takes you from zero to " hello="" world"="" in="" less="" than="" 15="" minutes."="">
+  <meta name="keywords" content="docker tutorial, docker hands-on, docker lab, try docker">
+  <meta name="go-import" content="docker.com git https://github.com/docker/docker">
+  
+  
+  
+      <link rel="stylesheet" href="./Online Tutorial - Try It!   Docker_files/862aa7ac0758.css" type="text/css">
+  
+  
+  
+      <script type="text/javascript" src="./Online Tutorial - Try It!   Docker_files/pd.js"></script><script type="text/javascript" async="" src="./Online Tutorial - Try It!   Docker_files/linkid.js" id="undefined"></script><script type="text/javascript" async="" src="./Online Tutorial - Try It!   Docker_files/mixpanel-2.2.min.js"></script><script async="" src="./Online Tutorial - Try It!   Docker_files/analytics.js"></script><script src="./Online Tutorial - Try It!   Docker_files/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="https://d3oypxn00j2a10.cloudfront.net/0.11.2/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+      <script type="text/javascript" src="./Online Tutorial - Try It!   Docker_files/03e695dc6a6a.js"></script>
+  
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6096819-11', 'docker.com');
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview', {
+   'page': location.pathname + location.search  + location.hash,
+  });
+
+</script>
+<!-- start Mixpanel --><script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+mixpanel.init("d16c532d598e031de69c52fc6242fdb3");</script><!-- end Mixpanel -->
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=u(e),f=c.length,s=i(a,o,r),p=0;f>p;p++)c[p].apply(s,n);return s}function a(t,e){f[t]=u(t).concat(e)}function u(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:u,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){l.proto="https"===p.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=l.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),u=window,c=u.document,f="addEventListener",s="attachEvent",p=(""+location).split("?")[0],l=e.exports={offset:i(),origin:p,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),u[f]("load",n,!1)):(c[s]("onreadystatechange",r),u[s]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}]},{},["G9z0Bl"]);</script><script type="text/javascript" src="./Online Tutorial - Try It!   Docker_files/analytics"></script></head>
+<body cz-shortcut-listen="true">
+<div id="wrap">
+
+<!-- navigation -->
+
+
+<div id="topmostnav" class="navbar navbar-static-top public">
+  <div class="container">
+    <a href="https://www.docker.com/" title="Homepage">
+      <div class="brand logo"><img src="./Online Tutorial - Try It!   Docker_files/docker-logo-loggedout.png" alt="Docker - An open platform for distributed applications for developers and sysadmins."> </div>
+    </a>
+    <ul class="nav">
+      <li class=""><a href="https://www.docker.com/whatisdocker/" title="What is Docker">What is Docker?</a></li>
+      <li class=""><a href="https://www.docker.com/resources/usecases/" title="Use Cases">Use Cases</a></li>
+      <li class="active"><a href="./Online Tutorial - Try It!   Docker_files/Online Tutorial - Try It!   Docker.htm" title="Try It!">Try It!</a></li>
+      <li><a href="https://docs.docker.com/" title="Install &amp; Docs">Install &amp; Docs</a></li>
+      <li><a href="https://registry.hub.docker.com/" title="Browse">Browse</a></li>
+    </ul>
+    <div id="usernav" class="pull-right">
+      <a id="btn-header-login" href="https://hub.docker.com/account/login" class="btn nav-button2" title="Lg In">Log In</a>
+      <a id="btn-header-signup" href="https://hub.docker.com/account/signup" class="btn nav-button1" title="Sign Up">Sign Up</a>
+      <a id="btn-myconsole" href="https://hub.docker.com/" class="btn nav-button1" title="My Console" style="display: none;">My Console</a>
+    </div>
+  </div>
+</div>
+
+<!-- end of navigation -->
+
+
+<div class="container">
+<div class="row">
+  <div class="span12">
+    <div class="expand">
+
+
+<link href="https://d3oypxn00j2a10.cloudfront.net/0.11.2/lib/css/jquery.terminal.css" rel="stylesheet">
+<link rel="stylesheet" href="https://d3oypxn00j2a10.cloudfront.net/0.11.2/css/tutorial-style.css">
+
+<div id="online-cli-tutorial">
+<h1 class="h1-caption">The best way to understand Docker is to try it!</h1>
+<div id="overlay" class="row tutorial togglesize startsize">
+  <div id="main">
+    <div id="leftside" class="left togglesize hide-when-small">
+      <div id="return-back">
+        <a id="fullSizeClose" class="home-link3"><i class="icon-arrow-left"></i> Back</a>
+      </div>
+      <hr>
+      <div id="step-indicator">
+        <span>Step</span><span id="step-no">1</span>
+      </div>
+      <hr>
+      <div id="progress-indicator" class="clearfix">
+        <span id="marker-0" class="progress-marker">0</span>
+      <span id="marker-1" class="progress-marker">1</span><span id="marker-2" class="progress-marker">2</span><span id="marker-3" class="progress-marker">3</span><span id="marker-4" class="progress-marker">4</span><span id="marker-5" class="progress-marker">5</span><span id="marker-6" class="progress-marker">6</span><span id="marker-7" class="progress-marker">7</span><span id="marker-8" class="progress-marker">8</span></div>
+
+      <div id="instructions" class="text body" style="display: block;"><h3>Docker Engine parts</h3>
+The Docker Engine consists of two parts: a daemon, a server process that
+manages all the containers, and a client, which acts as a remote control
+for the daemon.</div>
+
+      <div id="assignment" class="text body"><h3>Assignment</h3>
+Check which version of Docker is running. This will verify that the
+daemon is running and that you can connect to it. If you can see the
+version number you know you are all set.</div>
+
+      <hr>
+
+      <div id="command">
+        <div class="text">
+          <h3><i class="icon-question-sign"></i> Show the answer</h3>
+          <div id="commandShownText" class="hidden">docker version</div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="tips">
+        <div class="tiptext">
+          <h3>Tips</h3>
+
+
+
+          <div id="tipShownText" class="">Try typing <code>docker</code> to see the full list of accepted arguments. This emulator provides only a limited set of shell and Docker commands, so some commands may not work as expected.</div>
+        </div>
+      </div>
+
+      <div id="ajax" class="">.</div>
+
+    </div> <!-- end left -->
+
+    <div id="starttext" class="span4 togglesize startsize hide-when-full">
+      <p class="body">
+        </p><h1>In this 10-minute tutorial, see how Docker works first-hand:</h1>
+      <p></p>
+      <p class="small-body">
+        You'll search for and find an image another user built and shared in the Docker Hub Registry, a cloud-based collection of applications.
+      </p>
+      <p class="small-body">
+        You'll download and run it - running images are containers - and have it output 'hello world'.
+      </p>
+      <p class="small-body">
+        Then you'll install the 'ping' utility into the container, commit all your changes, and run a test of your updated image.
+      </p>
+      <p class="small-body">
+        Finally, you'll push your image to the Docker Hub Registry so that other developers can find and use it...
+      </p>
+      <p class="small-body">
+        ...on a laptop, a VM in a data center, or a public cloud instance, without having to change anything at all about the image!
+      </p>
+      <div style="text-align: center">
+        <a id="fullSizeOpen" href="https://www.docker.com/tryit/#" class="btn primary-cta-button2">Start The Tutorial</a>
+      </div>
+    </div>
+
+    <div id="rightside" class="span8">
+      <div id="terminal-extenstion" class="right togglesize smallsize"></div>
+      <div id="terminal" class="right togglesize smallsize terminal"><div class="terminal-output"><div><div style="width: 100%;">Welcome&nbsp;to&nbsp;the&nbsp;interactive&nbsp;Docker&nbsp;tutorial</div></div><div><div style="width: 100%;">you@tutorial:~$&nbsp;ls</div></div><div><div style="width: 100%;">This&nbsp;is&nbsp;an&nbsp;emulator,&nbsp;not&nbsp;a&nbsp;shell.&nbsp;Try&nbsp;following&nbsp;the&nbsp;instructions.</div></div><div><div style="width: 100%;">you@tutorial:~$&nbsp;ryan</div></div><div><div style="width: 100%;">ryan:&nbsp;command&nbsp;not&nbsp;found</div></div></div><div class="cmd" style="width: 100%;"><span class="prompt">you@tutorial:~$&nbsp;</span><span></span><span class="cursor">&nbsp;</span><span></span><textarea class="clipboard"></textarea></div></div>
+      <div id="results" class="results togglesize" style="display: none;">
+        <div id="resulttext" class="text">
+        </div>
+        <button id="buttonNext" class="docker-btn-blue docker-btn-large" disabled="disabled" tabindex="0">next</button>
+        <button id="buttonFinish" class="docker-btn-blue docker-btn-large hidden" tabindex="0">Finish and see what's next!</button>
+      </div>
+      <p class="eyebrow text-center subnote">
+      This emulator provides only a limited set of shell and Docker commands.
+      </p>
+    </div>
+  </div>
+</div>
+
+<p></p></div><p></p>
+
+<script src="./Online Tutorial - Try It!   Docker_files/jquery-1.7.1.min.js"></script>
+
+<script src="./Online Tutorial - Try It!   Docker_files/jquery.mousewheel-min.js"></script>
+
+<script src="./Online Tutorial - Try It!   Docker_files/jquery.terminal-0.7.4.min.js"></script>
+
+<script src="./Online Tutorial - Try It!   Docker_files/sugar-1.3.9.min.js"></script>
+
+<script src="./Online Tutorial - Try It!   Docker_files/terminal.js"></script>
+
+<script src="./Online Tutorial - Try It!   Docker_files/steps.js"></script>
+
+<p></p></div><p></p>
+
+  </div>
+</div>
+</div>
+
+<div id="push"></div>
+</div>
+<!-- end of wrap -->
+
+<!-- footer -->
+
+<div id="footer-container" class="container">
+  <div id="footer" class="grey-body">
+    <div class="row">
+      <div class="span2">
+        <span class="footer-title">Community</span>
+        <ul class="unstyled">
+          <li><a class="primary-button" href="https://www.docker.com/community/events/">Events</a></li>
+          <li><a class="primary-button" href="http://www.scoop.it/t/docker-by-docker">Friends' Posts</a></li>
+          <li><a class="primary-button" href="https://www.docker.com/community/meetups/">Meetups</a></li>
+          <li><a class="primary-button" href="https://www.docker.com/community/governance/">Governance</a></li>
+          <li><a class="primary-button" href="http://forums.docker.com/">Forums</a></li>
+          <li><a class="primary-button" href="http://botbot.me/freenode/docker">IRC</a></li>
+          <li><a class="primary-button" href="https://github.com/docker/docker">GitHub</a></li>
+          <li><a class="primary-button" href="http://stackoverflow.com/search?q=docker">Stackoverflow</a></li>
+          <li><a class="primary-button" href="http://www.cafepress.com/docker">Swag</a></li>
+        </ul>
+      </div>
+      <div class="span2">
+        <span class="footer-title">Enterprise</span>
+        <ul class="unstyled">
+          <li><a class="primary-button" href="https://www.docker.com/enterprise/support/">Support</a></li>
+          <li><a class="primary-button" href="https://www.docker.com/enterprise/education/">Education</a></li>
+          <li><a class="primary-button" href="https://www.docker.com/enterprise/services/">Services</a></li>
+        </ul>
+        <span class="footer-title">Partner Solutions</span>
+        <ul class="unstyled">
+          <li><a class="primary-button" href="https://www.docker.com/partners/find/">Find a Partner</a></li>
+          <li><a class="primary-button" href="https://www.docker.com/partners/program/">Partner Program</a></li>
+          <li><a class="primary-button" href="https://www.docker.com/partners/learn/">Learn More</a></li>
+        </ul>
+      </div>
+      <div class="span2">
+        <span class="footer-title">Resources</span>
+        <ul class="unstyled">
+          <li><a class="primary-button" href="https://docs.docker.com/">Documentation</a></li>
+          <li><a class="primary-button" href="https://www.docker.com/resources/help/">Help</a></li>
+          <li><a class="primary-button" href="https://www.docker.com/resources/usecases/">Use Cases</a></li>
+          <li><a class="primary-button" href="http://www.docker.com/tryit/">Online Tutorial</a></li>
+          <li><a class="primary-button" href="https://www.docker.com/resources/howtobuy/">How To Buy</a></li>
+          <li><a class="primary-button" href="http://status.docker.com/">Status</a></li>
+          <li><a class="primary-button" href="https://www.docker.com/resources/security/">Security</a></li>
+        </ul>
+      </div>
+      <div class="span2">
+        <span class="footer-title">Company</span>
+        <ul class="unstyled">
+          <li><a class="primary-button" href="https://www.docker.com/company/aboutus/">About Us</a></li>
+          <li><a class="primary-button" href="https://www.docker.com/company/team/">Team</a></li>
+          <li><a class="primary-button" href="https://www.docker.com/company/news/">News</a></li>
+          <li><a class="primary-button" href="https://www.docker.com/company/press/">Press</a></li>
+          <li><a class="primary-button" href="https://www.docker.com/company/careers/">Careers</a></li>
+          <li><a class="primary-button" href="https://www.docker.com/company/contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div class="span3">
+        <span class="footer-title">Connect</span>
+        <div class="search">
+          <span>Subscribe to our newsletter</span>
+          <form action="https://www.docker.com/subscribe_newsletter/" method="post">
+            <input class="form-control" id="id_email" name="email" placeholder="Enter your email" type="text">
+            
+            <button type="submit"><i class="icon-arrow-right"></i> </button>
+          </form>
+        </div>
+        <ul class="unstyled social">
+          <li><a title="Docker Blog" class="primary-button blog" href="http://blog.docker.com/">Blog</a></li>
+          <li><a title="Docker on Twitter" class="primary-button twitter" href="http://twitter.com/docker">Twitter</a></li>
+          <li><a title="Docker on Google+" class="primary-button googleplus" href="https://plus.google.com/u/0/communities/108146856671494713993">Google+</a></li>
+          <li><a title="Docker on Facebook" class="primary-button facebook" href="https://www.facebook.com/docker.run">Facebook</a></li>
+          <li><a title="Docker on Youtube" class="primary-button youtube" href="http://www.youtube.com/user/dockerrun">YouTube</a></li>
+        </ul>
+        <ul class="unstyled social">
+          <li><a title="Docker on SlideShare" class="primary-button slideshare" href="http://www.slideshare.net/docker">Slideshare</a></li>
+          <li>
+             <a title="Docker on LinkedIn" class="primary-button" href="https://www.linkedin.com/company/docker">
+                 <span class="linkedin"></span>
+                 LinkedIn
+             </a>
+          </li>
+          <li>
+              <a title="Docker on GitHub" class="primary-button" href="https://github.com/docker/">
+                  <span class="github"></span>
+                  GitHub
+              </a>
+          </li>
+          <li>
+              <a title="Docker on Reddit" class="primary-button" href="http://www.reddit.com/r/docker">
+                  <span class="reddit"></span>
+                  Reddit
+              </a>
+          </li>
+          <li>
+              <a title="Docker on AngelList" class="primary-button" href="https://angel.co/docker-inc-1">
+                  <span class="angellist"></span>
+                  AngelList
+              </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row clearfix">
+      <div class="span6 pagination-right copyright">
+        <span>© 2014 Docker, Inc.</span>
+      </div>
+      <div class="span6 pagination-left copyright">
+        <a href="https://www.docker.com/legal/terms_of_service">Terms</a> ·
+        <a href="https://www.docker.com/legal/privacy_policy">Privacy</a> ·
+        <a href="https://www.docker.com/legal/trademark_guidelines">Trademarks &amp; Logos</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end of footer -->
+
+<script type="text/javascript">
+piAId = '45082';
+piCId = '1482';
+
+(function() {
+  function async_load(){
+    var s = document.createElement('script'); s.type = 'text/javascript';
+    s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+    var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+  }
+  if(window.attachEvent) { window.attachEvent('onload', async_load); }
+  else { window.addEventListener('load', async_load, false); }
+})();
+
+</script>
+<script type="text/javascript">
+  // Function to make the sticky header possible
+  var shiftWindow = function() {
+    scrollBy(0, -80);
+  };
+
+  window.addEventListener("hashchange", shiftWindow);
+  $(window).load(function() {
+    if (window.location.hash) {
+      shiftWindow();
+    }
+  });
+  $(document).ready(function() {
+    $('#content').css("min-height", $(window).height() - 553 );
+  })
+
+  var userName = getCookie('docker_sso_username');
+  if (userName) {
+    $('#usernav #btn-header-login').hide();
+    $('#usernav #btn-header-signup').hide();
+    $('#usernav #btn-myconsole').show();
+  } else {
+    $('#usernav #btn-myconsole').hide();
+    $('#usernav #btn-header-login').show();
+    $('#usernav #btn-header-signup').show();
+  }
+</script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-2.newrelic.com","queueTime":0,"licenseKey":"971b6146e9","agent":"js-agent.newrelic.com/nr-476.min.js","transactionName":"Yl1QMUFZV0JVV0IIWVsXdBBdW01YW1oZBVxUVlUKHU5QVENHGAZTW11ADFAWW1BHUQw1U1hIXgRHXW9YUUMYBlNB","applicationID":"4457535","errorBeacon":"bam.nr-data.net","applicationTime":25}</script><script src="./Online Tutorial - Try It!   Docker_files/nr-476.min.js"></script><script type="text/javascript" src="./Online Tutorial - Try It!   Docker_files/971b6146e9"></script></body></html>

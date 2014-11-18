@@ -1,0 +1,88 @@
+VER 3 0100000000000006 "Ambush" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [
+/cast Premeditation
+/cast Ambush
+END
+VER 3 010000000000000D "AoE" "INV_MISC_QUESTIONMARK"
+#showtooltip Fan of Knives
+/use Bladefist's Breadth
+/startattack
+/cast Fan of Knives
+END
+VER 3 0100000000000008 "Blind" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,harm][] Blind
+END
+VER 3 010000000000000B "BS" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nocombat] Stealth
+/cast Backstab
+END
+VER 3 0100000000000012 "Cloak/Vanish" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence reset=60 Cloak of Shadows, Vanish
+END
+VER 3 0100000000000002 "follow" "ABILITY_RACIAL_TIMEISMONEY"
+/follow
+END
+VER 3 0100000000000004 "Gouge" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, harm][] Gouge
+END
+VER 3 0100000000000005 "Heal" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [combat] Heavy Runecloth Bandage
+/use Runecloth Bandage
+/use Netherweave Bandage
+END
+VER 3 0100000000000003 "Health" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use Horde Battle Standard
+/use Super Healing Potion
+/use Healthstone
+END
+VER 3 010000000000000F "Kidney Shot" "INV_MISC_QUESTIONMARK"
+#showtooltip Kidney Shot
+/use Bladefist's Breadth
+/cast Kidney Shot
+END
+VER 3 010000000000000E "Prep/Vanish" "INV_MISC_QUESTIONMARK"
+/castsequence Preparation, Vanish
+END
+VER 3 0100000000000001 "Sap" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, harm][] Sap
+END
+VER 3 0100000000000011 "Shroud of Concea" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nocombat, nostealth] Stealth
+/cast [stealth] Shroud of Concealment
+END
+VER 3 0100000000000009 "Slice and Dice" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Slice and Dice
+END
+VER 3 010000000000000C "Speed" "INV_MISC_QUESTIONMARK"
+#showtooltip Burst of Speed
+/dismount
+/cast [nocombat,nostealth] Stealth
+/cast Burst of Speed
+END
+VER 3 010000000000000A "Sprint" "INV_MISC_QUESTIONMARK"
+#showtooltip Sprint
+/cast [nocombat,nostealth] Stealth
+/cast Sprint
+END
+VER 3 0100000000000010 "Stealth" "INV_MISC_QUESTIONMARK"
+#showtooltip [stealth] Stealth
+/cast [combat] Vanish
+/cast [nocombat,nostealth] Stealth
+END
+VER 3 0100000000000007 "Stun" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [combat] Vanish
+/cast [stealth] Cheap Shot
+/cast Vanish
+END

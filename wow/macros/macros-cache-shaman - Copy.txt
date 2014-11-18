@@ -1,0 +1,30 @@
+VER 3 0100000000000004 "Buff" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,help][help]Water Walking
+/castsequence reset=target Water Shield, Water Walking
+END
+VER 3 0100000000000002 "cs" "INV_MISC_QUESTIONMARK"
+/stopcasting
+/cast [@mouseover,harm][] Wind Shear
+END
+VER 3 0100000000000007 "Earth Shield" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:alt, @player][@mouseover, help][help] Earth Shield
+END
+VER 3 0100000000000001 "melee" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:alt, @player][@mouseover, help][help] Healing Surge
+/cast [harm] Primal Strike
+/cast [] Healing Surge
+END
+VER 3 0100000000000003 "Purge" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [harm] Purge
+/cast [@mouseover,help][help][] Cleanse Spirit
+END
+VER 3 0100000000000006 "Riptide" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:alt, @player][@mouseover, help][help] []Riptide
+END
+VER 3 0100000000000005 "Thunderstorm" "INV_MISC_QUESTIONMARK"
+END
