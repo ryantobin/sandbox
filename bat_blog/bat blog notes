@@ -1,0 +1,8 @@
+::bat blog
+
+:: create a file, in the folder this bat file is in
+type NUL > EmptyFile.txt
+// name it the date - Y-M-D_HH-MM-SS
+echo %DATE:~10,4%-%DATE:~4,2%-%DATE:~7,2%_%TIME:0,1%-%TIME:~3,2%-%TIME:~6,2%
+// open it in a program
+START
