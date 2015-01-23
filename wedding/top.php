@@ -21,8 +21,22 @@ switch (window.location.href.split('/').pop().split('.')[0]) {
 		menu.getElementsByTagName('a')[0].href = '#';
 		menu.getElementsByTagName('a')[0].className = 'currentpage'
 		break;
-	case 'our-story'
-
+	case 'pre-wedding':
+		menu.getElementsByTagName('a')[1].href = '#';
+		menu.getElementsByTagName('a')[1].className = 'currentpage'
+		break;
+	case 'wedding-day':
+		menu.getElementsByTagName('a')[2].href = '#';
+		menu.getElementsByTagName('a')[2].className = 'currentpage'
+		break;
+	case 'accommodation':
+		menu.getElementsByTagName('a')[3].href = '#';
+		menu.getElementsByTagName('a')[3].className = 'currentpage'
+		break;
+	case 'rsvp':
+		menu.getElementsByTagName('a')[4].href = '#';
+		menu.getElementsByTagName('a')[4].className = 'currentpage'
+		break;
 	default:
 		break;
 }

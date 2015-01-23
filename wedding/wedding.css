@@ -249,3 +249,7 @@ form input.button-send {
 	width: 80px;
 	clear: both;
 }
+
+#main-menu .currentpage {
+	background-color: #FFFFFF;
+}
