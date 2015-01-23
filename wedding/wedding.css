@@ -5,17 +5,20 @@
 html, body { margin:0 0; padding:0 0; min-height:100% }
 
 body {
-	background-image: url('images/home_background.jpg');
+	background-image: url('images/pei/IMG_6817.JPG');
 	background-size: cover;
 	background-repeat: no-repeat;
 	font-family: Arial,Helvetica,sans-serif;
 	width: 100%;
 	height: 100%;
-	color: #5A390F;
+	/*color: #5A390F;*/
+	color: #23374F;
+	font-family: 'Roboto', sans-serif;
 }
 a, a:visited, a:link, a:hover, a:active {
 	text-decoration: none;
-	color: #5A390F;
+	/*color: #5A390F;*/
+	color: #23374F;
 }
 #top-banner {
 	margin: 20px auto;
@@ -23,6 +26,7 @@ a, a:visited, a:link, a:hover, a:active {
 	/*text-align: center;*/
 	font-size: 1.4em;
 	font-weight: bold;
+	background-color: rgba(255, 255, 255, 0.36);
 }
 
 #top-banner .names {
@@ -65,10 +69,12 @@ a, a:visited, a:link, a:hover, a:active {
 }
 #main-menu a {
 	font-weight: bold;
-	color: #5A390F;
+	/*color: #5A390F;*/
+	color: #23374F;
 	display: table-cell;
 	vertical-align: middle;
-	background-color: #EDD8C7;
+	/*background-color: #EDD8C7;*/
+	background-color: #DBDFED;
 	border-right: 1px solid white;
 }
 #main-menu a:last-child {
@@ -97,7 +103,7 @@ a, a:visited, a:link, a:hover, a:active {
 	height: 540px;
 	background: white;
 	margin: 0 auto;
-	background-image: url('images/IMG_6771.JPG');
+	background-image: url('images/pei/IMG_6748.JPG');
 	background-size: cover;
 	border: 4px solid white;
 }
@@ -109,11 +115,11 @@ a, a:visited, a:link, a:hover, a:active {
 	margin: 0 auto;
 }
 #note {
-	background-color: #EDD8C7;
+	background-color: rgba(205, 205, 205, 0.79);
 	text-align: center;
 	border: 2px solid white;
-	width: 50%;
-	margin: 12px auto 32px;
+	width: 795px;
+	margin: 32px auto 32px;
 	padding: 20px;
 	font-weight: bold;
 }
@@ -192,7 +198,8 @@ header{
 }
 #events-info-body header, #our-story-body header {
 	font-size: 1.8em;
-	color: #5A390F;
+	/*color: #5A390F;*/
+	color: #04008E;
 }
 h2 {
 	font-size: 1.2em;
