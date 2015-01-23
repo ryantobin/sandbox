@@ -20,6 +20,9 @@ a, a:visited, a:link, a:hover, a:active {
 	/*color: #5A390F;*/
 	color: #23374F;
 }
+h2,h3 {
+	color: #23374F;
+}
 #top-banner {
 	margin: 20px auto;
 	width: 835px;
@@ -165,7 +168,7 @@ a, a:visited, a:link, a:hover, a:active {
 	float: left;
 	margin: 24px;
 }
-#our-story-body header {
+#our-story-body header. #body-bg header {
 	padding-top: 24px;
 }
 #our-story-body .text {
@@ -191,7 +194,7 @@ header{
 #events-info-body-bg {
 	background: #EDD8C7;
 	width: 394px;
-	height: 693px;
+	height: 554px;
 	opacity: 0.6;
 	position: absolute;
 	z-index: -1;
@@ -199,7 +202,7 @@ header{
 #events-info-body header, #our-story-body header {
 	font-size: 1.8em;
 	/*color: #5A390F;*/
-	color: #04008E;
+	color: #23374F;
 }
 h2 {
 	font-size: 1.2em;
@@ -223,11 +226,21 @@ h3, #events-info-body p {
 #rsvp-header {
 	text-align: center;
 }
+
+#rsvp-body {
+	width: 831px;
+	height: 540px;
+	margin: 48px auto 0;
+	padding: 32px;
+	font-size: 18px;
+	background-color: rgba(205, 205, 205, 0.79);
+}
+#rsvp-body .text a, #rsvp-body .text span {
+	color: rgb(119, 72, 52);
+	cursor: pointer;
+}
 #form-box {
 	width: 360px;
-	left: 368px;
-	position: relative;
-	top: -110px;
 }
 .form-input, textarea {
 	width: 320px;

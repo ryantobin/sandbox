@@ -28,26 +28,41 @@
 <body>
 	<div id='content'>
 		<?php include 'top.php'; ?>
-		<div id='our-story-body-bg'></div>
-		<div id='our-story-body'>
-			<div id='osimg'></div>
-			<div class='text'>
-				<header>Our Story...</header>
+		<div id='events'>		
+			<div id='events-info-body-bg'></div>
+			<div id='events-info-body'>				
+				<header>Events</header>
+				<h2>Pre-Wedding Activities</h2>
+				<h3>Montreal or Adirondacks - TBD</h3>
+				Week of Monday, August 27th
+				<br><br>
 				<p>
-					Kristen and Ryan have been dating for 5 years, 
-					though most people have probably heard the story 
-					of their meeting, there is much to tell of the 
-					time the two have had and shared together.
+					Camping, canoeing and mountain climbing in the Saranac Lake area.
 				</p>
+				<br>
 				<p>
-					Once upon a time, there was a pub named <i>Next Door</i>...
+					In Montreal, we will organize an afternoon at <a href='http://hurleysirishpub.com/en_home.html'>Hurley's Irish Pub</a>
 				</p>
-			</div>
+
+				<h2>Tobin Family BBQ</h2>
+				<h3>Uncle Pat and Tamara's</h3>
+				<p>
+					Friday, July 31th at 6:00 pm
+					<br>
+					267 Ch. Covey Hill, Hemmingford, Quebec
+				​</p>
+
+				<h2>Evening in Ottawa</h2>
+				<h3>TBD</h3>
+				<p>
+					Saturday, August 1st
+					<br>The night before the big day!
+				​</p>
+			</div>			 
 			<div class='maps'>
  				<div class='map_canvas' id="map_canvas_CH"></div>
 			</div>
 		</div>
-
 		<div id='bottom-menu'></div>
 	</div>
 	<div id='footer'></div>
