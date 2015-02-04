@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html>
 
-<head>
-	<link href="wedding.css" rel="stylesheet" type="text/css">
-	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-</head>
+<?php include ('head.php'); ?>
 
 <body>
 	<div id='content'>
@@ -33,6 +28,7 @@
 
 		<div id='bottom-menu'></div>
 	</div>
-	<div id='footer'></div>
+
 </body>
+
 </html>

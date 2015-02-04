@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html>
 
-<head>
-	<link href="wedding.css" rel="stylesheet" type="text/css">
-	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-</head>
+<?php include ('head.php'); ?>
+
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 <script>
   function initialize() {
@@ -36,23 +31,23 @@
 				<h2>Wedding Shuttles</h2>
 				<h3>Bus One - From Ottawa/Hull</h3>
 				<p>
-					Sunday, August 2nd, 2015
-					<br>2:45 - Judy's House, 777 Lonsdale Rd., Ottawa
-					<br>3:05 - Laurie's House, 161 Manor Ave., Ottawa
+					<br>3:00 - Laurie's House, 161 Manor Ave., Ottawa
 					<br>3:30 - Hilton Lac Leamy, 1 Boul. du Casino, Hull
 					<br>4:00 - Arrival at Le Belvedere
 				</p>
 				<br> 
 				<h3>Bus Two - From Wakefield</h3>
 				<p>
-					Sunday, August 2nd, 2015
+					<br>
+					To Be Determined
+<!-- 					Sunday, August 2nd, 2015
 					<br>4:20 - Wakefield Inn
-					<br>4:30 - Arrival at Le Belvedere
+					<br>4:30 - Arrival at Le Belvedere -->
 				</p>
-				<h2>The Wedding</h2>
+				<h2 style="padding: 12px 0 0;">The Wedding</h2>
 				<h3>Le Belvedere</h3>
 				<p>
-					Sunday, August 2nd, 2015 at 5:00pm
+					Sunday, August 2nd, 2015 at 4:30pm
 					<br>40 Ch. Des Sentiers, Wakefield, Quebec
 				</p>
 			</div>			 
@@ -60,13 +55,14 @@
  				<div class='map_canvas' id="map_canvas_belv"></div>
 			</div>
 		</div>
-
-		<div id='bottom-menu'></div>
 	</div>
-	<div id='footer'></div>
+
 </body>
+<script>
+var extraPadding = 28;
+var eventInfoBodyHeight = parseInt(window.getComputedStyle(document.getElementById('events-info-body')).height) + extraPadding + 'px';
 
-<!-- LOAD JAVASCRIPT LIBRARIES HERE -->
+document.getElementById('events-info-body-bg').style.height = eventInfoBodyHeight;
 
-
+</script>
 </html>
