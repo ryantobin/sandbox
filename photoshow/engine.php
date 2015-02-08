@@ -11,7 +11,8 @@ class PhotoshowEngine
 /************************************************
 
 		Display Pictures
-		// displays images in individual image tags
+		// displays images in a specified folder as 
+			individual image tags
 
 *************************************************/
 function getPicturesFrom($foldername) {
@@ -36,7 +37,6 @@ function getPicturesFrom($foldername) {
 
 	// GET FILE NAMES IN THE FOLDER
 	$listOfFilesInPicturesPath = scandir($picturesPath);
-	print_r($listOfFilesInPicturesPath);
 
 	// If its an image add it to the listOfImages
 	foreach ($listOfFilesInPicturesPath as $nameOfFile)
@@ -64,7 +64,7 @@ function getPicturesFrom($foldername) {
 	{
 		//echo '<img src="'+picturesPath+'/'+nameOfFile+'">';
 		//echo '<br>'.$picturesPath.'/'.$nameOfFile;
-		echo '<img src="'.$picturesPath.'/'.$nameOfFile.'" class="photoimage" width="100%">';
+		echo '<div class="image-wrapper"><img src="'.$picturesPath.'/'.$nameOfFile.'" class="photoimage"></div>';
 
 	}
 }

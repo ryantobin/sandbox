@@ -16,7 +16,7 @@ $eng = new PhotoshowEngine(); // This is the main engine of the site
 <head>
 	<title>Photoshow</title>
 	<link type='text/css' rel='stylesheet' href='photoshow.css'>
-	<script src='../js/jquery-1.8.2.js'/>
+	<script src='../js/jquery-1.11.2.min.js'/>
 
 	<script>
 // $(window).scroll(function() {
@@ -29,14 +29,28 @@ $eng = new PhotoshowEngine(); // This is the main engine of the site
 
 <body>
 
-<?php
+	<div id='brightnessfilter'>
+		<script>
+			var currentColor = $('#brightnessfilter').css('background-color');
+			$('#testoutput').text = currentColor;
+		</script>
+	</div>
 
-	$eng->getPicturesFrom('pics');
+	<?php
 
-?>
+		// $eng->getPicturesFrom('pics');
+		$eng->getPicturesFrom('../images');
+
+	?>
+
 	<div class='pictureWrapper'>
 		<img src="pics/kitten_stella.jpg" onclick='moveRight(this)'>
 	</div>
+
+	<?php
+		include('testoutputcontrols.php');
+	?>
+
 </body>
 
 <script>
