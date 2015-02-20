@@ -1,3 +1,6 @@
+<script src='tests.js'/>
+
+
 <!-- Testing Output -->
 	<div id='testoutput'>
 		This is test output.
@@ -15,9 +18,7 @@
 				</button>
 			</span>
 			<script>
-				if(!document.getElementById('brightnessfilter')) {
-					document.body.innerHTML = "<div id='brightnessfilter'></div>" + document.body.innerHTML;
-				}
+				elementExists('brightnessfilter');
 			</script>
 		</div>
 		<div id='folder'>
@@ -27,6 +28,33 @@
 		</div>
 	</div>
 	
+	<script>
+	// Body overlay - to prevent easy copy and paste, allow brightness, or other mouse/click tracking
+	if(!document.getElementById('brightnessfilter')) {
+		function create(htmlStr) {
+		    var frag = document.createDocumentFragment(),
+		        temp = document.createElement('div');
+		    temp.innerHTML = htmlStr;
+		    while (temp.firstChild) {
+		        frag.appendChild(temp.firstChild);
+		    }
+		    return frag;
+		}
+
+		// var fragment = create('<div>Hello!</div><p>...</p>');
+		var fragment = create("<div id='brightnessfilter'>
+				<script>
+					var currentColor = $('#brightnessfilter').css('background-color');
+					$('#testoutput').text = currentColor;
+				</script>
+			</div>");
+
+		// You can use native DOM methods to insert the fragment:
+		document.body.insertBefore(fragment, document.body.childNodes[0]);
+	}
+		
+	</script>
+
 	<script>
 		function Brightness(level) {
 			// Quick Error Check for dependencies
@@ -78,4 +106,12 @@
 			backgroundColor = splitBGColor.toString();
 			$('#brightnessfilter').css('background-color', backgroundColor);
 		}
+	</script>
+
+	<script>
+
+	///TODO: Folder / Foldername AJAX to change pictures being displayed
+	
+
+
 	</script>

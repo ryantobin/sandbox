@@ -29,13 +29,6 @@ $eng = new PhotoshowEngine(); // This is the main engine of the site
 
 <body>
 
-	<div id='brightnessfilter'>
-		<script>
-			var currentColor = $('#brightnessfilter').css('background-color');
-			$('#testoutput').text = currentColor;
-		</script>
-	</div>
-
 	<?php
 
 		// $eng->getPicturesFrom('pics');
@@ -74,7 +67,23 @@ function moveRight(elem) {
 }
 
 </script>
+<script>
 
+// set image width/height
+var imageWrappers = document.getElementsByClassName('image-wrapper');
+
+for (var i = 0; i < imageWrappers.length; i++) {
+	var image = imageWrappers[i].getElementsByTagName('img')[0];
+	// if image height > image-wrapper height
+	// make image height equal to image-wrapper height
+	// center image horizontal
+
+	// if image width > image-wrapper
+	console.log(image);
+}
+
+
+</script>
 <script>
 	//DISABLE MOUSE WHEEL SCROLLING
     $(document).ready(function() {
