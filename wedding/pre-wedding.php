@@ -30,7 +30,7 @@
 				<header>Events</header>
 				<h2>Pre-Wedding Activities</h2>
 				<h3>Montreal or Adirondacks - TBD</h3>
-				Week of Monday, August 27th
+				Week of Monday, July 27th
 				<br><br>
 				<p>
 					Canoeing, camping, and mountain climbing in the Saranac Lake area.
