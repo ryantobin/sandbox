@@ -41,6 +41,9 @@ switch (pageName) {
 		menu.getElementsByTagName('a')[4].className = 'currentpage';
 		break;
 	default:
+		document.getElementById('content').className = 'index';
+		menu.getElementsByTagName('a')[0].href = '#';
+		menu.getElementsByTagName('a')[0].className = 'currentpage';
 		break;
 }
 
