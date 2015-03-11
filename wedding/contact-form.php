@@ -25,7 +25,7 @@ if(isset($_POST['submit']))
 
 	// Authentication
 	$mail->Username = "kaleiwolf@gmail.com"; // My Full GMail Address
-	$mail->Password = "Legend02";	// GMail Password
+	include 'password.php';
 
 	// Compose
 	$mail->SetFrom($_POST['email'], $_POST['name']);

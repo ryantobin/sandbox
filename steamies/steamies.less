@@ -1,0 +1,37 @@
+@backgroundcolor: #262834;
+@textcolor: #d3d3d3;
+
+body {
+	background: @backgroundcolor;
+	color: @textcolor;
+}
+
+#top {
+
+}
+
+section {
+	min-height: 50%;
+	background: @backgroundcolor;
+	margin: 32px 16px;
+}
+section:nth-child(even) {
+	background: @textcolor;
+	color: @backgroundcolor;
+}
+
+#grandopening {
+	height: 100%;
+	background: url(Steamies_Grand_Opening.jpg) no-repeat;
+	background-position: center;
+}
+
+#menu {
+	td:first-of-type {
+		min-width: 160px;
+		font-weight: bold;
+	}
+	td {
+		height: 44px;
+	}
+}

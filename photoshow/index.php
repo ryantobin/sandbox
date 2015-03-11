@@ -32,9 +32,29 @@ $eng = new PhotoshowEngine(); // This is the main engine of the site
 	<?php
 
 		// $eng->getPicturesFrom('pics');
-		$eng->getPicturesFrom('../images');
+		//$eng->getPicturesFrom('../images');
 
 	?>
+
+	<div class='test-photos'>
+		<div style='background-color: purple'>
+			<img src='../images/cat1.jpg'>
+		</div>
+		<div style='background-color: green'>
+			<img src='../images/bailey.png'>
+		</div>
+		<div style='background-color: blue'>
+			<img src='../images/aa-gabrielle1.jpg'>
+		</div>
+	</div>
+
+<script>
+// function to set image dimensions
+function setImageDimensions (imageWrapperWrapper) {
+	
+}
+
+</script>
 
 	<div class='pictureWrapper'>
 		<img src="pics/kitten_stella.jpg" onclick='moveRight(this)'>
