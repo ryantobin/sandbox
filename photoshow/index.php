@@ -52,6 +52,7 @@ $eng = new PhotoshowEngine(); // This is the main engine of the site
 // function to set image dimensions
 function setImageDimensions (imageWrapperWrapper) {
 	
+	
 }
 
 </script>
