@@ -1,3 +1,3 @@
 <?php 
-$mail->Password = "Legend02";	// GMail Password
+$mail->Password = ;	// GMail Password
 ?>
