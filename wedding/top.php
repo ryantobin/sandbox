@@ -32,7 +32,7 @@ switch (pageName) {
 		menu.getElementsByTagName('a')[2].href = '#';
 		menu.getElementsByTagName('a')[2].className = 'currentpage';
 		break;
-	case 'accommodation':
+	case 'accommodations':
 		menu.getElementsByTagName('a')[3].href = '#';
 		menu.getElementsByTagName('a')[3].className = 'currentpage';
 		break;
