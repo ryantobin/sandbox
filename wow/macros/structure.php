@@ -47,12 +47,14 @@
 <div class='wrapper'>
 	<div class='box'>
 		<div id='content'>
-			<p>
-				Each class can have up to 18 individual macros.
-			</p>
-			<p>
-				Each account has used to have 18 shared macros, but now has around 100.
-			</p>
+			<div class='tips' style='visibility:hidden; display:none'>
+				<p>
+					Each class can have up to 18 individual macros.
+				</p>
+				<p>
+					Each account used to have 18 shared macros, but now has around 100.
+				</p>
+			</div>
 			<div id='macro-body'>
 				<?php
 
@@ -68,9 +70,11 @@
 						}
 					}		
 					$macroFile = array();
+					
 					foreach ($macroArray as $filename) {						
 						// print file_get_contents ($filename);
-						$classname = explode('-', str_replace('.txt', '', $filename))[2];
+						$classnameFile = explode('-', str_replace('.txt', '', $filename));
+						$classname = $classnameFile[2];							
 						$macroFile[$classname] = file_get_contents($filename);
 						//echo "<br>".$classname."<br>";
 						echo "<pre id=".$classname." style='display: none;'>".$macroFile[$classname]."</pre>";
